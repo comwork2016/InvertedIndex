@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1465285187 source:/home/andin/CodeBlocks/InvertedIndex/main.cpp
+	<iostream>
+	"Document.h"
+	"ReadCorpus.h"
+
+1465282110 /home/andin/CodeBlocks/InvertedIndex/include/content/Document.h
+	<string>
+	<fstream>
+	<sstream>
+	<map>
+	"../DataStructure.h"
+	"../util/StringUtil.h"
+	"../util/SplitUtil.h"
+	<iostream>
+
+1465281004 source:/home/andin/CodeBlocks/InvertedIndex/src/content/Document.cpp
+	"Document.h"
+
+1465279802 /home/andin/CodeBlocks/InvertedIndex/include/Constants.h
+
+1465281531 /home/andin/CodeBlocks/InvertedIndex/include/DataStructure.h
+	<vector>
+
+1463992605 /home/andin/CodeBlocks/InvertedIndex/include/Util/StringUtil.h
+	<string>
+	<vector>
+	<string.h>
+	<stdlib.h>
+
+1465280806 /home/andin/CodeBlocks/InvertedIndex/include/Util/SplitUitl.h
+	<string>
+	<map>
+
+1465281363 /home/andin/CodeBlocks/InvertedIndex/include/Util/SplitUtil.h
+	<string>
+	<map>
+	"../DataStructure.h"
+
+1463992605 /home/andin/CodeBlocks/InvertedIndex/include/util/StringUtil.h
+	<string>
+	<vector>
+	<string.h>
+	<stdlib.h>
+
+1465285663 /home/andin/CodeBlocks/InvertedIndex/include/util/SplitUtil.h
+	<string>
+	<map>
+	"NLPIR.h"
+	"../DataStructure.h"
+	<iostream>
+
+1465282894 /home/andin/CodeBlocks/InvertedIndex/include/corpus/ReadCorpus.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	"../DataStructure.h"
+	"../util/SplitUtil.h"
+	"../util/StringUtil.h"
+
+1465285024 source:/home/andin/CodeBlocks/InvertedIndex/src/corpus/ReadCorpus.cpp
+	"ReadCorpus.h"
+
