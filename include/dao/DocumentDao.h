@@ -17,6 +17,7 @@ class DocumentDao
 
     protected:
         std::map<DOC_ID,WordIndexRecord*> QueryIndexOfWord(const std::string& str_Word);
+        bool isWordIndexExists(const std::string& str_Word);
         int InsertIndexOfDocument(const Document* doc);
     private:
         mongo::DBClientConnection m_Conn;

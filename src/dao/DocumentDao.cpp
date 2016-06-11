@@ -41,6 +41,13 @@ std::map<DOC_ID,WordIndexRecord*> DocumentDao::QueryIndexOfWord(const std::strin
     return map_WordIndexRecord;
 }
 
+bool DocumentDao::isWordIndexExists(const std::string& str_Word)
+{
+    mongo::Query query = QUERY("word"<<str_Word);
+    mongo::BSONObj obj = this->m_Conn.findOne(this->m_IndexDBName,query);
+    return obj.isEmpty()?false:true;
+}
+
 /**
     将文档索引添加到数据库中
 */
@@ -51,6 +58,7 @@ int DocumentDao::InsertIndexOfDocument(const Document* doc)
     for(std::map<std::string,WordIndex*>::iterator it = map_WordIndex.begin(); it != map_WordIndex.end(); it++)
     {
         WordIndex* wordIndex = it->second;//每个词的索引
+        //构造要插入文档的BSONObj
         WordIndexRecord* record = wordIndex->GetMapDocWordIndex()[doc->GetDocID()];
         mongo::BSONObjBuilder bb_Record;
         bb_Record.append("docid",record->GetDocID());
@@ -63,13 +71,29 @@ int DocumentDao::InsertIndexOfDocument(const Document* doc)
             bb_PosArray.append(bb_pos.obj());
         }
         bb_Record.append("poss",bb_PosArray.arr());
-        //更新单词的文档索引
-        mongo::Query query = QUERY("word"<<wordIndex->GetstrWord());
-        mongo::BSONObjBuilder bb_Docs;
-        bb_Docs.append("docs",bb_Record.obj());
-        mongo::BSONObjBuilder bb;
-        bb.append("$push",bb_Docs.obj());
-        this->m_Conn.update(this->m_IndexDBName,query,bb.obj(),true,false);
+
+        bool b_exists = isWordIndexExists(wordIndex->GetstrWord());
+        if(!b_exists)//如果不存在，则新建索引并插入
+        {
+            mongo::BSONObjBuilder bb;
+            bb.append("word",wordIndex->GetstrWord());
+            bb.append("length",wordIndex->GetnWordLength());
+            bb.append("POS",wordIndex->GetstrPOS());
+            mongo::BSONArrayBuilder bab_Docs;
+            bab_Docs.append(bb_Record.obj());
+            bb.append("docs",bab_Docs.arr());
+            this->m_Conn.insert(this->m_IndexDBName,bb.obj());
+        }
+        else
+        {
+            //更新单词的文档索引
+            mongo::BSONObjBuilder bb_Docs;
+            bb_Docs.append("docs",bb_Record.obj());
+            mongo::BSONObjBuilder bb;
+            bb.append("$push",bb_Docs.obj());
+            mongo::Query query = QUERY("word"<<wordIndex->GetstrWord());
+            this->m_Conn.update(this->m_IndexDBName,query,bb.obj(),true,false);
+        }
     }
     return 0;
 }
