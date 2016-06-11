@@ -9,7 +9,6 @@
 #include <string>
 
 #include "../DataStructure.h"
-#include "../util/SplitUtil.h"
 #include "../util/StringUtil.h"
 
 class ReadCorpus

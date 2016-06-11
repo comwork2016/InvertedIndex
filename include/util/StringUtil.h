@@ -20,6 +20,7 @@ class StringUtil
         static bool isStringBlank(std::wstring wstr);
         static std::wstring ConvertCharArraytoWString(const std::string& str);
         static std::vector<std::wstring> SplitWString(const std::wstring& wstr_Source, const std::wstring& wstr_Delims);
+        static std::vector<std::string> SplitString(const std::string& str_Source,const std::string& str_pattern);
 
     protected:
     private:

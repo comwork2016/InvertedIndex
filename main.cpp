@@ -15,9 +15,12 @@ int main()
     double duration;
     start = clock();
     //读取语料库中的词频信息
-    ReadCorpus::ReadCorpusTF("./Corpus/Corpus.csv");
-    ReadCorpus::ReadStopTerm("./Corpus/STOP.txt");
-    DocumentOperation::AddDocument("./in/utf_23.txt");
+    //ReadCorpus::ReadCorpusTF("./Corpus/Corpus.csv");
+    ReadCorpus::ReadStopTerm("./Corpus/StopTerm.txt");
+
+    //DocumentOperation::AddDocument("./in/utf_23.txt");
+    std::string str_InputDir = "./in/";
+    DocumentOperation::AddDirectoryDocuments(str_InputDir);
 
     finish = clock();
     duration = (double)(finish - start) / CLOCKS_PER_SEC;

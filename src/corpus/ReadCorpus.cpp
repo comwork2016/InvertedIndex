@@ -20,7 +20,7 @@ void ReadCorpus::ReadCorpusTF(const std::string& str_CorpusPath)
     std::string line;
     while (getline(fin, line))
     {
-        std::vector<std::string> fields = SplitUtil::SplitString(line,",");
+        std::vector<std::string> fields = StringUtil::SplitString(line,",");
         std::string term = StringUtil::Trim(fields[0]);
         std::string str_frequency = StringUtil::Trim(fields[1]);
         double frequency = atof(str_frequency.c_str())/100;
@@ -47,7 +47,7 @@ void ReadCorpus::ReadStopTerm(const std::string& str_Path)
         set_StopTerm.insert(line);
     }
     fin.close();
-    std::cout<<"Reading corpus done!"<<std::endl;
+    std::cout<<"Reading stop words done!"<<std::endl;
 }
 
 ReadCorpus::~ReadCorpus()

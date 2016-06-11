@@ -34,7 +34,7 @@ std::wstring StringUtil::ConvertCharArraytoWString(const std::string& str)
 */
 bool StringUtil::isStringBlank(std::string str)
 {
-    if(str=="　")//中文空格
+    if(str == "　")//中文空格
     {
         return true;
     }
@@ -103,6 +103,29 @@ std::vector<std::wstring> StringUtil::SplitWString(const std::wstring& wstr_Sour
         }
     }
     return vec_wstrSplited;
+}
+
+/**
+    分隔字符串
+*/
+std::vector<std::string>  StringUtil::SplitString(const std::string& str_Source,const std::string& str_pattern)
+{
+    std::vector<std::string> result;
+    std::string str = str_Source + str_pattern;
+    int strsize=str.size();
+    int patternSize = str_pattern.size();
+    std::string::size_type pos;
+    for(int i=0; i<strsize; i++)
+    {
+        pos =str.find(str_pattern,i);
+        if(pos!=std::string::npos && pos<strsize)
+        {
+            std::string s=str.substr(i,pos-i);
+            result.push_back(s);
+            i=pos+patternSize-1;
+        }
+    }
+    return result;
 }
 
 StringUtil::~StringUtil()
