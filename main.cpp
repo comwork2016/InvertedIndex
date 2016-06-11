@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+
 #include "Document.h"
 #include "ReadCorpus.h"
 #include "DocumentOperation.h"
@@ -11,9 +12,9 @@ std::set<std::string> ReadCorpus::set_StopTerm;
 int main()
 {
     //设置全局环境本地化
-    std::clock_t start,finish;
+    struct timeval start,finish;
     double duration;
-    start = std::clock();
+    gettimeofday(&start,NULL);
     //读取语料库中的词频信息
     //ReadCorpus::ReadCorpusTF("./Corpus/Corpus.csv");
     ReadCorpus::ReadStopTerm("./Corpus/StopTerm.txt");
@@ -22,8 +23,9 @@ int main()
     std::string str_InputDir = "./in/";
     DocumentOperation::AddDirectoryDocuments(str_InputDir);
 
-    finish = std::clock();
-    duration =(finish - start) /  (double)CLOCKS_PER_SEC;
-    std::cout<<std::endl<<std::endl<<"cost "<<finish<<" - "<<start<<" = "<<duration<<" secs"<<std::endl<<std::endl;
+    gettimeofday(&finish,NULL);
+    duration = 1000000 * (finish.tv_sec - start.tv_sec) + finish.tv_usec - start.tv_usec;
+    duration /= 1000000;
+    std::cout<<std::endl<<std::endl<<"cost "<<duration<<" s"<<std::endl<<std::endl;
     return 0;
 }
