@@ -65,6 +65,7 @@ int DocumentOperation::AddDirectoryDocuments(const std::string& str_InputDir)
                 delete vec_Documents[i];
             }
             vec_Documents.clear();
+            //break;
         }
     }
     //将文档集合添加到数据库中
@@ -91,6 +92,7 @@ int DocumentOperation::InsertDocuments(const std::vector<Document*>& vec_Doc,std
         if(str_SimilarDoc=="")
         {
             doc->BuildInvertedIndex();
+            //doc->Display();
             docDao->InsertDocument(doc);
             std::cout<<doc->GetstrDocName() <<" inserted"<<std::endl;
             ofs_Log<<doc->GetstrDocName() <<" inserted"<<std::endl;

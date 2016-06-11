@@ -9,7 +9,7 @@ Document::Document(const std::string& str_DocPath, bool b_Split)
     this->m_strDocName = str_DocPath.substr(n_SeparatorIndex+1);
     this->m_strContents = "";
     this->m_lSimHash = 0;
-    this->m_nWordCount = 0;
+    //this->m_nWordCount = 0;
     this->m_bSplit = b_Split;
     if(b_Split)
     {
@@ -21,13 +21,13 @@ Document::Document(const std::string& str_DocPath, bool b_Split)
             std::cout<<"read file "<<this->m_strDocPath<<" error"<<std::endl;
             return;
         }
-            //初始化分词组件
-            if(!NLPIR_Init(0,UTF8_CODE,0))
-            {
-                std::cout<<"ICTCLAS INIT FAILED!"<<std::endl;
-            }
-            SplitSentenceToWords();
-            CalcDocSimHash();
+        //初始化分词组件
+        if(!NLPIR_Init(0,UTF8_CODE,0))
+        {
+            std::cout<<"ICTCLAS INIT FAILED!"<<std::endl;
+        }
+        SplitSentenceToWords();
+        CalcDocSimHash();
     }
     else
     {
@@ -158,12 +158,12 @@ void Document::SplitSentenceToWords()
             SplitTermAndCalcTF(sen);
         }
     }
-    //提取文章标题中的词语
+    /*//提取文章标题中的词语
     Sentence& title = this->m_vecParagraph[0].vec_Sentences[0];//第一段的第一句话是标题
     for(int i=0; i<title.vec_splitedHits.size(); i++)
     {
         this->m_vecTitleTerm.push_back(title.vec_splitedHits[i].word);
-    }
+    }*/
 }
 
 /**
@@ -195,8 +195,8 @@ void Document::SplitTermAndCalcTF(Sentence& sen)
                 pVecResult[i].sPOS
             };
             sen.vec_splitedHits.push_back(sh_hits);
-            this->m_nWordCount++;
-            this->m_mapTF[str_HitsWord] += 1;
+            //this->m_nWordCount++;
+            //this->m_mapTF[str_HitsWord] += 1;
         }
     }
     //std::cout<<sh_hits.word<<"["<<sh_hits.offset<<","<<sh_hits.length<<","<<sh_hits.hashValue<<"]   ";
@@ -219,10 +219,10 @@ void Document::CalcDocSimHash()
         {
             Sentence& sen = para.vec_Sentences[j];
             int n_WordCount = sen.vec_splitedHits.size();
-            for(int x=0;x<n_WordCount-SIMHASHKGRAM+1;x++)
+            for(int x=0; x<n_WordCount-SIMHASHKGRAM+1; x++)
             {
                 std::string kgramWord;
-                for(int k=0;k<SIMHASHKGRAM;k++)
+                for(int k=0; k<SIMHASHKGRAM; k++)
                 {
                     SplitedHits sh = sen.vec_splitedHits[x+k];
                     kgramWord.append(sh.word);
@@ -245,13 +245,13 @@ void Document::CalcDocSimHash()
 */
 void Document::BuildInvertedIndex()
 {
-    for(int i=0;i<this->m_vecParagraph.size();i++)
+    for(int i=0; i<this->m_vecParagraph.size(); i++)
     {
         Paragraph& para = this->m_vecParagraph[i];
-        for(int j=0;j<para.vec_Sentences.size();j++)
+        for(int j=0; j<para.vec_Sentences.size(); j++)
         {
             Sentence& sen = para.vec_Sentences[j];
-            for(int k=0;k<sen.vec_splitedHits.size();k++)
+            for(int k=0; k<sen.vec_splitedHits.size(); k++)
             {
                 SplitedHits& sh = sen.vec_splitedHits[k];
                 WordIndex* wordsIndex;
@@ -259,7 +259,8 @@ void Document::BuildInvertedIndex()
                 {
                     wordsIndex = new WordIndex(sh.word,sh.textRange.length,sh.POS);
                 }
-                else{
+                else
+                {
                     wordsIndex = this->m_mapWordIndex[sh.word];
                 }
                 wordsIndex->AddDocPosInfo(this->m_strDocPath,sh.textRange.offset);
@@ -317,7 +318,7 @@ Document::~Document()
         NLPIR_Exit();
     }
     //释放倒排索引所占的资源
-    for(std::map<std::string,WordIndex*>::iterator it = this->m_mapWordIndex.begin(); it != this->m_mapWordIndex.end();it++)
+    for(std::map<std::string,WordIndex*>::iterator it = this->m_mapWordIndex.begin(); it != this->m_mapWordIndex.end(); it++)
     {
         delete it->second;
     }

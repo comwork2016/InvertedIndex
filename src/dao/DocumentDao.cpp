@@ -30,7 +30,7 @@ std::map<DOC_ID,WordIndexRecord*> DocumentDao::QueryIndexOfWord(const std::strin
             std::string str_DocID = bson.getStringField("docid");
             WordIndexRecord* wordIndexRecord = new WordIndexRecord(str_DocID);
             mongo::BSONArray arrPos(bson.getObjectField("poss"));
-            for(mongo::BSONObjIterator itr = arrPos.begin();itr.more();)
+            for(mongo::BSONObjIterator itr = arrPos.begin(); itr.more();)
             {
                 mongo::BSONObj bson_Pos = itr.next().Obj();
                 wordIndexRecord->AddPosInfo(bson_Pos.getIntField("pos"));
@@ -50,35 +50,26 @@ int DocumentDao::InsertIndexOfDocument(const Document* doc)
     //遍历文档中所有的词语
     for(std::map<std::string,WordIndex*>::iterator it = map_WordIndex.begin(); it != map_WordIndex.end(); it++)
     {
-        WordIndex* wordIndex = it->second;
-        std::map<DOC_ID,WordIndexRecord*> map_WordIndexRecord = QueryIndexOfWord(wordIndex->GetstrWord());
-        map_WordIndexRecord[doc->GetDocID()] = wordIndex->GetMapDocWordIndex()[doc->GetDocID()];
-        //更新单词的文档索引
-        mongo::BSONObjBuilder b;
-        b.append("word",wordIndex->GetstrWord());
-        b.appendNumber("length",wordIndex->GetnWordLength());
-        b.append("POS",wordIndex->GetstrPOS());
-        mongo::BSONArrayBuilder bb_DocPosArray;
-        for(std::map<DOC_ID,WordIndexRecord*>::iterator it = map_WordIndexRecord.begin();it!=map_WordIndexRecord.end();it++)
+        WordIndex* wordIndex = it->second;//每个词的索引
+        WordIndexRecord* record = wordIndex->GetMapDocWordIndex()[doc->GetDocID()];
+        mongo::BSONObjBuilder bb_Record;
+        bb_Record.append("docid",record->GetDocID());
+        bb_Record.appendNumber("tf",record->GetnTermFrequency());
+        mongo::BSONArrayBuilder bb_PosArray;
+        for(int j=0; j<record->GetVecPos().size(); j++)
         {
-            WordIndexRecord* record = it->second;
-            mongo::BSONObjBuilder bb_Record;
-            bb_Record.append("docid",record->GetDocID());
-            bb_Record.appendNumber("tf",record->GetnTermFrequency());
-            mongo::BSONArrayBuilder bb_PosArray;
-            for(int j=0; j<record->GetVecPos().size(); j++)
-            {
-                mongo::BSONObjBuilder bb_pos;
-                bb_pos.append("pos",record->GetVecPos()[j]);
-                bb_PosArray.append(bb_pos.obj());
-            }
-            bb_Record.append("poss",bb_PosArray.arr());
-            bb_DocPosArray.append(bb_Record.obj());
+            mongo::BSONObjBuilder bb_pos;
+            bb_pos.append("pos",record->GetVecPos()[j]);
+            bb_PosArray.append(bb_pos.obj());
         }
-        b.append("docs",bb_DocPosArray.arr());
+        bb_Record.append("poss",bb_PosArray.arr());
+        //更新单词的文档索引
         mongo::Query query = QUERY("word"<<wordIndex->GetstrWord());
-        // b.obj()只能调用一次
-        this->m_Conn.update(this->m_IndexDBName,query,b.obj(),true,false);
+        mongo::BSONObjBuilder bb_Docs;
+        bb_Docs.append("docs",bb_Record.obj());
+        mongo::BSONObjBuilder bb;
+        bb.append("$push",bb_Docs.obj());
+        this->m_Conn.update(this->m_IndexDBName,query,bb.obj(),true,false);
     }
     return 0;
 }

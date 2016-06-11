@@ -2,9 +2,9 @@ utf_540.txt inserted
 utf_1010.txt inserted
 utf_776.txt inserted
 utf_1684.txt inserted
-utf_839.txt inserted
+DUPLICATE DOC TO INSERT: utf_839.txt is similar to ./in/utf_1010.txt
 utf_1385.txt inserted
-utf_1820.txt inserted
+DUPLICATE DOC TO INSERT: utf_1820.txt is similar to ./in/utf_1385.txt
 utf_1991.txt inserted
 utf_1218.txt inserted
 utf_1986.txt inserted
@@ -12,8 +12,1977 @@ utf_237.txt inserted
 utf_783.txt inserted
 utf_1342.txt inserted
 utf_468.txt inserted
-utf_1937.txt inserted
+DUPLICATE DOC TO INSERT: utf_1937.txt is similar to ./in/utf_1342.txt
 utf_241.txt inserted
 utf_1619.txt inserted
-utf_1699.txt inserted
+DUPLICATE DOC TO INSERT: utf_1699.txt is similar to ./in/utf_776.txt
 utf_593.txt inserted
+DUPLICATE DOC TO INSERT: utf_698.txt is similar to ./in/utf_1342.txt
+utf_1216.txt inserted
+utf_146.txt inserted
+DUPLICATE DOC TO INSERT: utf_1680.txt is similar to ./in/utf_1342.txt
+utf_193.txt inserted
+DUPLICATE DOC TO INSERT: utf_802.txt is similar to ./in/utf_1684.txt
+utf_1814.txt inserted
+utf_265.txt inserted
+DUPLICATE DOC TO INSERT: utf_1953.txt is similar to ./in/utf_1342.txt
+utf_200.txt inserted
+utf_1496.txt inserted
+utf_1178.txt inserted
+utf_1905.txt inserted
+utf_1674.txt inserted
+utf_1395.txt inserted
+utf_876.txt inserted
+utf_230.txt inserted
+utf_592.txt inserted
+utf_123.txt inserted
+utf_940.txt inserted
+DUPLICATE DOC TO INSERT: utf_1656.txt is similar to ./in/utf_1684.txt
+utf_1771.txt inserted
+utf_1165.txt inserted
+utf_1857.txt inserted
+DUPLICATE DOC TO INSERT: utf_1724.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_382.txt is similar to ./in/utf_540.txt
+DUPLICATE DOC TO INSERT: utf_780.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_583.txt is similar to ./in/utf_1684.txt
+utf_1877.txt inserted
+utf_630.txt inserted
+utf_1265.txt inserted
+DUPLICATE DOC TO INSERT: utf_1454.txt is similar to ./in/utf_1342.txt
+utf_631.txt inserted
+DUPLICATE DOC TO INSERT: utf_147.txt is similar to ./in/utf_1684.txt
+utf_1043.txt inserted
+utf_1502.txt inserted
+utf_1183.txt inserted
+DUPLICATE DOC TO INSERT: utf_380.txt is similar to ./in/utf_1342.txt
+utf_202.txt inserted
+utf_793.txt inserted
+utf_1174.txt inserted
+DUPLICATE DOC TO INSERT: utf_1332.txt is similar to ./in/utf_123.txt
+utf_1534.txt inserted
+utf_1951.txt inserted
+utf_280.txt inserted
+utf_1943.txt inserted
+utf_1103.txt inserted
+DUPLICATE DOC TO INSERT: utf_1170.txt is similar to ./in/utf_1342.txt
+utf_687.txt inserted
+DUPLICATE DOC TO INSERT: utf_91.txt is similar to ./in/utf_1342.txt
+utf_41.txt inserted
+utf_1960.txt inserted
+utf_750.txt inserted
+utf_1371.txt inserted
+utf_1319.txt inserted
+utf_756.txt inserted
+utf_680.txt inserted
+utf_1758.txt inserted
+DUPLICATE DOC TO INSERT: utf_1212.txt is similar to ./in/utf_1684.txt
+utf_1992.txt inserted
+utf_394.txt inserted
+utf_352.txt inserted
+utf_1201.txt inserted
+utf_327.txt inserted
+utf_921.txt inserted
+utf_1226.txt inserted
+utf_415.txt inserted
+utf_271.txt inserted
+utf_83.txt inserted
+utf_951.txt inserted
+utf_253.txt inserted
+utf_94.txt inserted
+utf_884.txt inserted
+utf_1856.txt inserted
+utf_1366.txt inserted
+utf_542.txt inserted
+utf_159.txt inserted
+utf_679.txt inserted
+DUPLICATE DOC TO INSERT: utf_67.txt is similar to ./in/utf_1684.txt
+utf_1326.txt inserted
+utf_700.txt inserted
+DUPLICATE DOC TO INSERT: utf_143.txt is similar to ./in/utf_700.txt
+utf_1614.txt inserted
+utf_613.txt inserted
+utf_1626.txt inserted
+utf_769.txt inserted
+DUPLICATE DOC TO INSERT: utf_308.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_1119.txt is similar to ./in/utf_769.txt
+utf_407.txt inserted
+utf_244.txt inserted
+utf_1599.txt inserted
+DUPLICATE DOC TO INSERT: utf_814.txt is similar to ./in/utf_1342.txt
+utf_1540.txt inserted
+DUPLICATE DOC TO INSERT: utf_576.txt is similar to ./in/utf_1342.txt
+utf_1160.txt inserted
+utf_1263.txt inserted
+utf_1554.txt inserted
+DUPLICATE DOC TO INSERT: utf_1066.txt is similar to ./in/utf_1554.txt
+utf_50.txt inserted
+utf_1629.txt inserted
+DUPLICATE DOC TO INSERT: utf_1525.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1222.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_994.txt is similar to ./in/utf_146.txt
+DUPLICATE DOC TO INSERT: utf_55.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_1293.txt is similar to ./in/utf_265.txt
+utf_273.txt inserted
+utf_1815.txt inserted
+utf_154.txt inserted
+utf_878.txt inserted
+utf_1570.txt inserted
+DUPLICATE DOC TO INSERT: utf_1409.txt is similar to ./in/utf_1342.txt
+utf_1839.txt inserted
+utf_600.txt inserted
+DUPLICATE DOC TO INSERT: utf_1382.txt is similar to ./in/utf_1342.txt
+utf_898.txt inserted
+utf_733.txt inserted
+DUPLICATE DOC TO INSERT: utf_568.txt is similar to ./in/utf_1218.txt
+DUPLICATE DOC TO INSERT: utf_1065.txt is similar to ./in/utf_776.txt
+utf_1070.txt inserted
+utf_403.txt inserted
+utf_1077.txt inserted
+DUPLICATE DOC TO INSERT: utf_1719.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_815.txt is similar to ./in/utf_265.txt
+utf_1354.txt inserted
+utf_1203.txt inserted
+utf_1589.txt inserted
+utf_1033.txt inserted
+utf_1083.txt inserted
+utf_390.txt inserted
+utf_663.txt inserted
+DUPLICATE DOC TO INSERT: utf_1985.txt is similar to ./in/utf_123.txt
+utf_1692.txt inserted
+utf_1654.txt inserted
+utf_206.txt inserted
+DUPLICATE DOC TO INSERT: utf_1988.txt is similar to ./in/utf_1654.txt
+DUPLICATE DOC TO INSERT: utf_1915.txt is similar to ./in/utf_403.txt
+utf_1313.txt inserted
+utf_509.txt inserted
+utf_1078.txt inserted
+utf_132.txt inserted
+DUPLICATE DOC TO INSERT: utf_900.txt is similar to ./in/utf_1078.txt
+utf_551.txt inserted
+DUPLICATE DOC TO INSERT: utf_1184.txt is similar to ./in/utf_1313.txt
+utf_152.txt inserted
+utf_1668.txt inserted
+utf_1130.txt inserted
+utf_527.txt inserted
+utf_1138.txt inserted
+utf_1500.txt inserted
+DUPLICATE DOC TO INSERT: utf_667.txt is similar to ./in/utf_152.txt
+utf_1108.txt inserted
+DUPLICATE DOC TO INSERT: utf_1432.txt is similar to ./in/utf_1108.txt
+utf_224.txt inserted
+DUPLICATE DOC TO INSERT: utf_875.txt is similar to ./in/utf_527.txt
+utf_316.txt inserted
+utf_960.txt inserted
+utf_1225.txt inserted
+utf_1670.txt inserted
+utf_1691.txt inserted
+utf_563.txt inserted
+DUPLICATE DOC TO INSERT: utf_829.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_137.txt is similar to ./in/utf_265.txt
+DUPLICATE DOC TO INSERT: utf_640.txt is similar to ./in/utf_940.txt
+DUPLICATE DOC TO INSERT: utf_505.txt is similar to ./in/utf_1684.txt
+utf_1051.txt inserted
+utf_72.txt inserted
+DUPLICATE DOC TO INSERT: utf_594.txt is similar to ./in/utf_1691.txt
+utf_855.txt inserted
+utf_1899.txt inserted
+utf_1463.txt inserted
+utf_1060.txt inserted
+utf_381.txt inserted
+DUPLICATE DOC TO INSERT: utf_1753.txt is similar to ./in/utf_381.txt
+utf_1634.txt inserted
+DUPLICATE DOC TO INSERT: utf_1076.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_384.txt is similar to ./in/utf_1684.txt
+utf_1685.txt inserted
+utf_1755.txt inserted
+DUPLICATE DOC TO INSERT: utf_1214.txt is similar to ./in/utf_1342.txt
+utf_608.txt inserted
+utf_1111.txt inserted
+utf_1112.txt inserted
+utf_758.txt inserted
+DUPLICATE DOC TO INSERT: utf_611.txt is similar to ./in/utf_1313.txt
+utf_1330.txt inserted
+DUPLICATE DOC TO INSERT: utf_195.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_629.txt is similar to ./in/utf_1342.txt
+utf_1575.txt inserted
+DUPLICATE DOC TO INSERT: utf_73.txt is similar to ./in/utf_1684.txt
+utf_1380.txt inserted
+utf_1166.txt inserted
+utf_1494.txt inserted
+DUPLICATE DOC TO INSERT: utf_103.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_812.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1455.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_789.txt is similar to ./in/utf_608.txt
+DUPLICATE DOC TO INSERT: utf_373.txt is similar to ./in/utf_758.txt
+DUPLICATE DOC TO INSERT: utf_516.txt is similar to ./in/utf_1684.txt
+utf_1321.txt inserted
+utf_1510.txt inserted
+utf_1234.txt inserted
+utf_1921.txt inserted
+utf_1686.txt inserted
+DUPLICATE DOC TO INSERT: utf_892.txt is similar to ./in/utf_1342.txt
+utf_1587.txt inserted
+utf_387.txt inserted
+DUPLICATE DOC TO INSERT: utf_584.txt is similar to ./in/utf_1313.txt
+utf_1248.txt inserted
+utf_1004.txt inserted
+utf_1623.txt inserted
+DUPLICATE DOC TO INSERT: utf_178.txt is similar to ./in/utf_1684.txt
+utf_1401.txt inserted
+utf_952.txt inserted
+DUPLICATE DOC TO INSERT: utf_322.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1697.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1989.txt is similar to ./in/utf_1684.txt
+utf_370.txt inserted
+utf_1487.txt inserted
+utf_778.txt inserted
+utf_1759.txt inserted
+utf_1645.txt inserted
+utf_1008.txt inserted
+utf_747.txt inserted
+utf_1419.txt inserted
+utf_258.txt inserted
+utf_1177.txt inserted
+utf_1593.txt inserted
+DUPLICATE DOC TO INSERT: utf_1483.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_919.txt is similar to ./in/utf_1684.txt
+utf_1942.txt inserted
+utf_1702.txt inserted
+DUPLICATE DOC TO INSERT: utf_1644.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_378.txt is similar to ./in/utf_265.txt
+utf_1517.txt inserted
+utf_18.txt inserted
+DUPLICATE DOC TO INSERT: utf_1113.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_216.txt is similar to ./in/utf_18.txt
+utf_556.txt inserted
+DUPLICATE DOC TO INSERT: utf_614.txt is similar to ./in/utf_1342.txt
+utf_714.txt inserted
+utf_173.txt inserted
+utf_978.txt inserted
+utf_1946.txt inserted
+utf_755.txt inserted
+utf_1447.txt inserted
+utf_1375.txt inserted
+utf_1924.txt inserted
+utf_1789.txt inserted
+DUPLICATE DOC TO INSERT: utf_1664.txt is similar to ./in/utf_1789.txt
+utf_389.txt inserted
+utf_1716.txt inserted
+utf_569.txt inserted
+utf_1244.txt inserted
+DUPLICATE DOC TO INSERT: utf_1637.txt is similar to ./in/utf_18.txt
+DUPLICATE DOC TO INSERT: utf_90.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1259.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1368.txt is similar to ./in/utf_1755.txt
+DUPLICATE DOC TO INSERT: utf_736.txt is similar to ./in/utf_1342.txt
+utf_762.txt inserted
+utf_1763.txt inserted
+DUPLICATE DOC TO INSERT: utf_290.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_532.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1766.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_856.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_887.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_997.txt is similar to ./in/utf_1755.txt
+utf_1748.txt inserted
+DUPLICATE DOC TO INSERT: utf_1210.txt is similar to ./in/utf_1587.txt
+utf_734.txt inserted
+utf_1780.txt inserted
+DUPLICATE DOC TO INSERT: utf_841.txt is similar to ./in/utf_1780.txt
+DUPLICATE DOC TO INSERT: utf_1853.txt is similar to ./in/utf_952.txt
+utf_506.txt inserted
+utf_550.txt inserted
+utf_242.txt inserted
+DUPLICATE DOC TO INSERT: utf_141.txt is similar to ./in/utf_714.txt
+utf_691.txt inserted
+DUPLICATE DOC TO INSERT: utf_1734.txt is similar to ./in/utf_1342.txt
+utf_1818.txt inserted
+DUPLICATE DOC TO INSERT: utf_862.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1041.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_438.txt is similar to ./in/utf_550.txt
+DUPLICATE DOC TO INSERT: utf_1543.txt is similar to ./in/utf_952.txt
+DUPLICATE DOC TO INSERT: utf_1757.txt is similar to ./in/utf_242.txt
+DUPLICATE DOC TO INSERT: utf_43.txt is similar to ./in/utf_550.txt
+DUPLICATE DOC TO INSERT: utf_709.txt is similar to ./in/utf_1684.txt
+utf_890.txt inserted
+utf_1208.txt inserted
+utf_1019.txt inserted
+DUPLICATE DOC TO INSERT: utf_251.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1014.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1252.txt is similar to ./in/utf_1684.txt
+utf_1667.txt inserted
+utf_1331.txt inserted
+utf_140.txt inserted
+utf_1172.txt inserted
+utf_1193.txt inserted
+DUPLICATE DOC TO INSERT: utf_591.txt is similar to ./in/utf_1193.txt
+DUPLICATE DOC TO INSERT: utf_175.txt is similar to ./in/utf_1758.txt
+utf_1876.txt inserted
+utf_1613.txt inserted
+utf_1176.txt inserted
+utf_1713.txt inserted
+DUPLICATE DOC TO INSERT: utf_1402.txt is similar to ./in/utf_1342.txt
+utf_907.txt inserted
+DUPLICATE DOC TO INSERT: utf_1747.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_706.txt is similar to ./in/utf_540.txt
+utf_1278.txt inserted
+utf_447.txt inserted
+utf_1920.txt inserted
+utf_371.txt inserted
+DUPLICATE DOC TO INSERT: utf_464.txt is similar to ./in/utf_776.txt
+DUPLICATE DOC TO INSERT: utf_863.txt is similar to ./in/utf_776.txt
+utf_1523.txt inserted
+utf_896.txt inserted
+utf_982.txt inserted
+utf_1679.txt inserted
+utf_1057.txt inserted
+DUPLICATE DOC TO INSERT: utf_441.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1531.txt is similar to ./in/utf_265.txt
+utf_597.txt inserted
+DUPLICATE DOC TO INSERT: utf_716.txt is similar to ./in/utf_700.txt
+utf_223.txt inserted
+utf_954.txt inserted
+utf_262.txt inserted
+utf_581.txt inserted
+DUPLICATE DOC TO INSERT: utf_754.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1223.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_63.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_894.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_1918.txt is similar to ./in/utf_1385.txt
+utf_932.txt inserted
+utf_1276.txt inserted
+utf_1775.txt inserted
+utf_1858.txt inserted
+utf_842.txt inserted
+utf_1653.txt inserted
+utf_587.txt inserted
+utf_1698.txt inserted
+DUPLICATE DOC TO INSERT: utf_1229.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1810.txt is similar to ./in/utf_1684.txt
+utf_85.txt inserted
+utf_1975.txt inserted
+utf_1925.txt inserted
+utf_1693.txt inserted
+DUPLICATE DOC TO INSERT: utf_1572.txt is similar to ./in/utf_1684.txt
+utf_1365.txt inserted
+DUPLICATE DOC TO INSERT: utf_1874.txt is similar to ./in/utf_1684.txt
+utf_1219.txt inserted
+DUPLICATE DOC TO INSERT: utf_130.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_77.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1659.txt is similar to ./in/utf_907.txt
+DUPLICATE DOC TO INSERT: utf_331.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_753.txt is similar to ./in/utf_1684.txt
+utf_1964.txt inserted
+utf_1559.txt inserted
+utf_1957.txt inserted
+utf_1279.txt inserted
+utf_1154.txt inserted
+utf_846.txt inserted
+DUPLICATE DOC TO INSERT: utf_440.txt is similar to ./in/utf_1342.txt
+utf_1967.txt inserted
+utf_808.txt inserted
+DUPLICATE DOC TO INSERT: utf_1198.txt is similar to ./in/utf_1342.txt
+utf_1615.txt inserted
+utf_1002.txt inserted
+DUPLICATE DOC TO INSERT: utf_1682.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_317.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_109.txt is similar to ./in/utf_1684.txt
+utf_639.txt inserted
+DUPLICATE DOC TO INSERT: utf_1277.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_547.txt is similar to ./in/utf_1278.txt
+DUPLICATE DOC TO INSERT: utf_339.txt is similar to ./in/utf_776.txt
+utf_453.txt inserted
+utf_1558.txt inserted
+DUPLICATE DOC TO INSERT: utf_110.txt is similar to ./in/utf_1385.txt
+utf_1783.txt inserted
+utf_1777.txt inserted
+utf_1132.txt inserted
+DUPLICATE DOC TO INSERT: utf_1791.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1336.txt is similar to ./in/utf_630.txt
+utf_928.txt inserted
+DUPLICATE DOC TO INSERT: utf_913.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1288.txt is similar to ./in/utf_1342.txt
+utf_88.txt inserted
+utf_622.txt inserted
+DUPLICATE DOC TO INSERT: utf_1658.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_1669.txt is similar to ./in/utf_1684.txt
+utf_924.txt inserted
+utf_1236.txt inserted
+utf_1443.txt inserted
+DUPLICATE DOC TO INSERT: utf_466.txt is similar to ./in/utf_1342.txt
+utf_1579.txt inserted
+utf_1089.txt inserted
+utf_574.txt inserted
+DUPLICATE DOC TO INSERT: utf_227.txt is similar to ./in/utf_1342.txt
+utf_107.txt inserted
+utf_1984.txt inserted
+utf_1191.txt inserted
+utf_1142.txt inserted
+utf_641.txt inserted
+DUPLICATE DOC TO INSERT: utf_607.txt is similar to ./in/utf_641.txt
+DUPLICATE DOC TO INSERT: utf_1046.txt is similar to ./in/utf_1208.txt
+utf_904.txt inserted
+DUPLICATE DOC TO INSERT: utf_799.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_433.txt is similar to ./in/utf_890.txt
+utf_699.txt inserted
+utf_86.txt inserted
+utf_1769.txt inserted
+utf_824.txt inserted
+utf_225.txt inserted
+DUPLICATE DOC TO INSERT: utf_539.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1836.txt is similar to ./in/utf_1008.txt
+DUPLICATE DOC TO INSERT: utf_1490.txt is similar to ./in/utf_1111.txt
+utf_303.txt inserted
+DUPLICATE DOC TO INSERT: utf_1105.txt is similar to ./in/utf_303.txt
+utf_1795.txt inserted
+utf_297.txt inserted
+utf_1398.txt inserted
+DUPLICATE DOC TO INSERT: utf_311.txt is similar to ./in/utf_1265.txt
+utf_1284.txt inserted
+utf_1405.txt inserted
+DUPLICATE DOC TO INSERT: utf_1897.txt is similar to ./in/utf_1342.txt
+utf_999.txt inserted
+utf_411.txt inserted
+utf_1121.txt inserted
+DUPLICATE DOC TO INSERT: utf_1001.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1408.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_138.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_707.txt is similar to ./in/utf_700.txt
+utf_197.txt inserted
+utf_930.txt inserted
+DUPLICATE DOC TO INSERT: utf_708.txt is similar to ./in/utf_1342.txt
+utf_1507.txt inserted
+utf_658.txt inserted
+DUPLICATE DOC TO INSERT: utf_1782.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_599.txt is similar to ./in/utf_700.txt
+utf_738.txt inserted
+DUPLICATE DOC TO INSERT: utf_791.txt is similar to ./in/utf_1684.txt
+utf_282.txt inserted
+DUPLICATE DOC TO INSERT: utf_713.txt is similar to ./in/utf_1008.txt
+DUPLICATE DOC TO INSERT: utf_310.txt is similar to ./in/utf_1684.txt
+utf_1805.txt inserted
+DUPLICATE DOC TO INSERT: utf_945.txt is similar to ./in/utf_930.txt
+DUPLICATE DOC TO INSERT: utf_1837.txt is similar to ./in/utf_930.txt
+utf_1459.txt inserted
+DUPLICATE DOC TO INSERT: utf_25.txt is similar to ./in/utf_890.txt
+utf_229.txt inserted
+utf_1072.txt inserted
+DUPLICATE DOC TO INSERT: utf_1707.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_177.txt is similar to ./in/utf_1072.txt
+DUPLICATE DOC TO INSERT: utf_933.txt is similar to ./in/utf_1684.txt
+utf_220.txt inserted
+DUPLICATE DOC TO INSERT: utf_304.txt is similar to ./in/utf_1072.txt
+DUPLICATE DOC TO INSERT: utf_1774.txt is similar to ./in/utf_1331.txt
+DUPLICATE DOC TO INSERT: utf_578.txt is similar to ./in/utf_1684.txt
+utf_1472.txt inserted
+utf_991.txt inserted
+utf_1273.txt inserted
+DUPLICATE DOC TO INSERT: utf_915.txt is similar to ./in/utf_1072.txt
+utf_1594.txt inserted
+utf_961.txt inserted
+utf_967.txt inserted
+utf_1884.txt inserted
+DUPLICATE DOC TO INSERT: utf_170.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_677.txt is similar to ./in/utf_1702.txt
+DUPLICATE DOC TO INSERT: utf_605.txt is similar to ./in/utf_1072.txt
+utf_294.txt inserted
+utf_828.txt inserted
+utf_1620.txt inserted
+utf_837.txt inserted
+DUPLICATE DOC TO INSERT: utf_348.txt is similar to ./in/utf_18.txt
+utf_1683.txt inserted
+utf_1239.txt inserted
+utf_1451.txt inserted
+utf_1027.txt inserted
+utf_419.txt inserted
+utf_21.txt inserted
+utf_987.txt inserted
+utf_166.txt inserted
+utf_1887.txt inserted
+DUPLICATE DOC TO INSERT: utf_278.txt is similar to ./in/utf_1191.txt
+utf_1173.txt inserted
+utf_180.txt inserted
+DUPLICATE DOC TO INSERT: utf_1662.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_54.txt is similar to ./in/utf_1702.txt
+DUPLICATE DOC TO INSERT: utf_405.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_897.txt is similar to ./in/utf_1780.txt
+DUPLICATE DOC TO INSERT: utf_249.txt is similar to ./in/utf_1780.txt
+utf_1387.txt inserted
+utf_867.txt inserted
+utf_473.txt inserted
+utf_181.txt inserted
+DUPLICATE DOC TO INSERT: utf_463.txt is similar to ./in/utf_297.txt
+DUPLICATE DOC TO INSERT: utf_1444.txt is similar to ./in/utf_1702.txt
+utf_1133.txt inserted
+utf_96.txt inserted
+DUPLICATE DOC TO INSERT: utf_1238.txt is similar to ./in/utf_181.txt
+utf_1641.txt inserted
+utf_1607.txt inserted
+DUPLICATE DOC TO INSERT: utf_213.txt is similar to ./in/utf_1342.txt
+utf_1878.txt inserted
+utf_533.txt inserted
+utf_888.txt inserted
+utf_1522.txt inserted
+utf_1389.txt inserted
+DUPLICATE DOC TO INSERT: utf_172.txt is similar to ./in/utf_1342.txt
+utf_1364.txt inserted
+utf_276.txt inserted
+DUPLICATE DOC TO INSERT: utf_535.txt is similar to ./in/utf_1313.txt
+utf_160.txt inserted
+DUPLICATE DOC TO INSERT: utf_1929.txt is similar to ./in/utf_1702.txt
+utf_1453.txt inserted
+utf_1584.txt inserted
+utf_1813.txt inserted
+utf_1939.txt inserted
+DUPLICATE DOC TO INSERT: utf_284.txt is similar to ./in/utf_1684.txt
+utf_1808.txt inserted
+DUPLICATE DOC TO INSERT: utf_1146.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1202.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_392.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1891.txt is similar to ./in/utf_1684.txt
+utf_950.txt inserted
+utf_1086.txt inserted
+DUPLICATE DOC TO INSERT: utf_1828.txt is similar to ./in/utf_1265.txt
+utf_1865.txt inserted
+DUPLICATE DOC TO INSERT: utf_1052.txt is similar to ./in/utf_1265.txt
+utf_1158.txt inserted
+utf_1185.txt inserted
+utf_1566.txt inserted
+DUPLICATE DOC TO INSERT: utf_1586.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1360.txt is similar to ./in/utf_1684.txt
+utf_786.txt inserted
+DUPLICATE DOC TO INSERT: utf_798.txt is similar to ./in/utf_1342.txt
+utf_1804.txt inserted
+utf_1048.txt inserted
+utf_1556.txt inserted
+DUPLICATE DOC TO INSERT: utf_33.txt is similar to ./in/utf_1048.txt
+DUPLICATE DOC TO INSERT: utf_153.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1287.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_724.txt is similar to ./in/utf_1684.txt
+utf_470.txt inserted
+DUPLICATE DOC TO INSERT: utf_482.txt is similar to ./in/utf_1265.txt
+utf_638.txt inserted
+DUPLICATE DOC TO INSERT: utf_283.txt is similar to ./in/utf_1684.txt
+utf_971.txt inserted
+utf_683.txt inserted
+utf_125.txt inserted
+DUPLICATE DOC TO INSERT: utf_1847.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_23.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_912.txt is similar to ./in/utf_1191.txt
+DUPLICATE DOC TO INSERT: utf_260.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_743.txt is similar to ./in/utf_1684.txt
+utf_507.txt inserted
+utf_970.txt inserted
+DUPLICATE DOC TO INSERT: utf_531.txt is similar to ./in/utf_1684.txt
+utf_1709.txt inserted
+utf_1031.txt inserted
+DUPLICATE DOC TO INSERT: utf_416.txt is similar to ./in/utf_1265.txt
+utf_27.txt inserted
+utf_325.txt inserted
+DUPLICATE DOC TO INSERT: utf_916.txt is similar to ./in/utf_1684.txt
+utf_233.txt inserted
+DUPLICATE DOC TO INSERT: utf_1527.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1822.txt is similar to ./in/utf_1684.txt
+utf_692.txt inserted
+DUPLICATE DOC TO INSERT: utf_520.txt is similar to ./in/utf_1265.txt
+utf_13.txt inserted
+DUPLICATE DOC TO INSERT: utf_985.txt is similar to ./in/utf_1265.txt
+utf_34.txt inserted
+DUPLICATE DOC TO INSERT: utf_1834.txt is similar to ./in/utf_1008.txt
+utf_764.txt inserted
+utf_1205.txt inserted
+utf_1197.txt inserted
+DUPLICATE DOC TO INSERT: utf_1305.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_334.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1114.txt is similar to ./in/utf_1748.txt
+utf_435.txt inserted
+utf_1312.txt inserted
+DUPLICATE DOC TO INSERT: utf_1297.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_267.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_455.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_571.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1427.txt is similar to ./in/utf_18.txt
+DUPLICATE DOC TO INSERT: utf_179.txt is similar to ./in/utf_930.txt
+utf_1983.txt inserted
+utf_1044.txt inserted
+DUPLICATE DOC TO INSERT: utf_1545.txt is similar to ./in/utf_550.txt
+DUPLICATE DOC TO INSERT: utf_1515.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1871.txt is similar to ./in/utf_1684.txt
+utf_1513.txt inserted
+DUPLICATE DOC TO INSERT: utf_1359.txt is similar to ./in/utf_1684.txt
+utf_360.txt inserted
+utf_1071.txt inserted
+DUPLICATE DOC TO INSERT: utf_56.txt is similar to ./in/utf_1684.txt
+utf_198.txt inserted
+utf_1465.txt inserted
+utf_1509.txt inserted
+DUPLICATE DOC TO INSERT: utf_845.txt is similar to ./in/utf_1342.txt
+utf_174.txt inserted
+utf_1497.txt inserted
+DUPLICATE DOC TO INSERT: utf_323.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1005.txt is similar to ./in/utf_930.txt
+utf_965.txt inserted
+utf_324.txt inserted
+DUPLICATE DOC TO INSERT: utf_1087.txt is similar to ./in/utf_1684.txt
+utf_1977.txt inserted
+utf_849.txt inserted
+DUPLICATE DOC TO INSERT: utf_1862.txt is similar to ./in/utf_1755.txt
+DUPLICATE DOC TO INSERT: utf_1909.txt is similar to ./in/utf_1684.txt
+utf_746.txt inserted
+utf_17.txt inserted
+utf_1631.txt inserted
+DUPLICATE DOC TO INSERT: utf_1717.txt is similar to ./in/utf_1813.txt
+utf_914.txt inserted
+DUPLICATE DOC TO INSERT: utf_1612.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_222.txt is similar to ./in/utf_1684.txt
+utf_49.txt inserted
+utf_210.txt inserted
+utf_1478.txt inserted
+utf_245.txt inserted
+DUPLICATE DOC TO INSERT: utf_1347.txt is similar to ./in/utf_1653.txt
+utf_1995.txt inserted
+utf_1930.txt inserted
+DUPLICATE DOC TO INSERT: utf_993.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_345.txt is similar to ./in/utf_758.txt
+utf_512.txt inserted
+DUPLICATE DOC TO INSERT: utf_751.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1751.txt is similar to ./in/utf_1060.txt
+utf_1647.txt inserted
+utf_865.txt inserted
+utf_1907.txt inserted
+utf_1776.txt inserted
+utf_517.txt inserted
+utf_964.txt inserted
+utf_1952.txt inserted
+utf_111.txt inserted
+utf_353.txt inserted
+utf_528.txt inserted
+DUPLICATE DOC TO INSERT: utf_1461.txt is similar to ./in/utf_1313.txt
+DUPLICATE DOC TO INSERT: utf_240.txt is similar to ./in/utf_123.txt
+utf_1728.txt inserted
+utf_1649.txt inserted
+utf_444.txt inserted
+utf_255.txt inserted
+utf_1470.txt inserted
+utf_1135.txt inserted
+utf_1582.txt inserted
+DUPLICATE DOC TO INSERT: utf_1621.txt is similar to ./in/utf_1313.txt
+utf_480.txt inserted
+utf_1825.txt inserted
+DUPLICATE DOC TO INSERT: utf_1228.txt is similar to ./in/utf_1342.txt
+utf_215.txt inserted
+utf_1562.txt inserted
+utf_546.txt inserted
+DUPLICATE DOC TO INSERT: utf_918.txt is similar to ./in/utf_1684.txt
+utf_1438.txt inserted
+DUPLICATE DOC TO INSERT: utf_99.txt is similar to ./in/utf_1684.txt
+utf_1912.txt inserted
+DUPLICATE DOC TO INSERT: utf_129.txt is similar to ./in/utf_1313.txt
+utf_1883.txt inserted
+utf_1710.txt inserted
+DUPLICATE DOC TO INSERT: utf_305.txt is similar to ./in/utf_1008.txt
+DUPLICATE DOC TO INSERT: utf_158.txt is similar to ./in/utf_1684.txt
+utf_1788.txt inserted
+DUPLICATE DOC TO INSERT: utf_1532.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1666.txt is similar to ./in/utf_265.txt
+utf_1082.txt inserted
+utf_1530.txt inserted
+utf_1151.txt inserted
+DUPLICATE DOC TO INSERT: utf_257.txt is similar to ./in/utf_215.txt
+DUPLICATE DOC TO INSERT: utf_62.txt is similar to ./in/utf_1684.txt
+utf_908.txt inserted
+utf_1180.txt inserted
+DUPLICATE DOC TO INSERT: utf_1914.txt is similar to ./in/utf_776.txt
+utf_1032.txt inserted
+DUPLICATE DOC TO INSERT: utf_873.txt is similar to ./in/utf_1684.txt
+utf_1101.txt inserted
+DUPLICATE DOC TO INSERT: utf_456.txt is similar to ./in/utf_253.txt
+utf_504.txt inserted
+utf_412.txt inserted
+DUPLICATE DOC TO INSERT: utf_661.txt is similar to ./in/utf_154.txt
+DUPLICATE DOC TO INSERT: utf_374.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1458.txt is similar to ./in/utf_683.txt
+utf_60.txt inserted
+DUPLICATE DOC TO INSERT: utf_1361.txt is similar to ./in/utf_991.txt
+DUPLICATE DOC TO INSERT: utf_974.txt is similar to ./in/utf_1684.txt
+utf_1642.txt inserted
+utf_458.txt inserted
+DUPLICATE DOC TO INSERT: utf_270.txt is similar to ./in/utf_154.txt
+DUPLICATE DOC TO INSERT: utf_1879.txt is similar to ./in/utf_1684.txt
+utf_164.txt inserted
+utf_1412.txt inserted
+DUPLICATE DOC TO INSERT: utf_1186.txt is similar to ./in/utf_1342.txt
+utf_1021.txt inserted
+utf_857.txt inserted
+utf_525.txt inserted
+DUPLICATE DOC TO INSERT: utf_1577.txt is similar to ./in/utf_776.txt
+utf_564.txt inserted
+utf_379.txt inserted
+DUPLICATE DOC TO INSERT: utf_1519.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_357.txt is similar to ./in/utf_1342.txt
+utf_187.txt inserted
+utf_1416.txt inserted
+utf_1399.txt inserted
+utf_905.txt inserted
+DUPLICATE DOC TO INSERT: utf_866.txt is similar to ./in/utf_1385.txt
+utf_1916.txt inserted
+DUPLICATE DOC TO INSERT: utf_1480.txt is similar to ./in/utf_1342.txt
+utf_763.txt inserted
+utf_1181.txt inserted
+utf_861.txt inserted
+DUPLICATE DOC TO INSERT: utf_989.txt is similar to ./in/utf_1265.txt
+utf_367.txt inserted
+utf_1237.txt inserted
+DUPLICATE DOC TO INSERT: utf_1996.txt is similar to ./in/utf_276.txt
+DUPLICATE DOC TO INSERT: utf_710.txt is similar to ./in/utf_540.txt
+utf_24.txt inserted
+utf_1090.txt inserted
+DUPLICATE DOC TO INSERT: utf_513.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1092.txt is similar to ./in/utf_569.txt
+utf_702.txt inserted
+utf_1849.txt inserted
+DUPLICATE DOC TO INSERT: utf_1861.txt is similar to ./in/utf_978.txt
+utf_1926.txt inserted
+DUPLICATE DOC TO INSERT: utf_1819.txt is similar to ./in/utf_1265.txt
+utf_668.txt inserted
+utf_632.txt inserted
+utf_1242.txt inserted
+utf_437.txt inserted
+utf_479.txt inserted
+utf_1143.txt inserted
+utf_980.txt inserted
+utf_810.txt inserted
+utf_40.txt inserted
+DUPLICATE DOC TO INSERT: utf_1379.txt is similar to ./in/utf_1342.txt
+utf_1603.txt inserted
+utf_211.txt inserted
+DUPLICATE DOC TO INSERT: utf_1468.txt is similar to ./in/utf_265.txt
+utf_1796.txt inserted
+utf_1875.txt inserted
+utf_239.txt inserted
+utf_1240.txt inserted
+utf_1378.txt inserted
+utf_1479.txt inserted
+DUPLICATE DOC TO INSERT: utf_1407.txt is similar to ./in/utf_241.txt
+utf_1224.txt inserted
+utf_1469.txt inserted
+DUPLICATE DOC TO INSERT: utf_79.txt is similar to ./in/utf_1907.txt
+utf_1578.txt inserted
+utf_1745.txt inserted
+utf_1821.txt inserted
+DUPLICATE DOC TO INSERT: utf_1561.txt is similar to ./in/utf_1385.txt
+utf_666.txt inserted
+utf_871.txt inserted
+DUPLICATE DOC TO INSERT: utf_80.txt is similar to ./in/utf_1342.txt
+utf_1418.txt inserted
+DUPLICATE DOC TO INSERT: utf_269.txt is similar to ./in/utf_1684.txt
+utf_1327.txt inserted
+DUPLICATE DOC TO INSERT: utf_870.txt is similar to ./in/utf_1789.txt
+DUPLICATE DOC TO INSERT: utf_1028.txt is similar to ./in/utf_540.txt
+utf_59.txt inserted
+utf_1428.txt inserted
+DUPLICATE DOC TO INSERT: utf_1567.txt is similar to ./in/utf_1684.txt
+utf_1011.txt inserted
+DUPLICATE DOC TO INSERT: utf_917.txt is similar to ./in/utf_1780.txt
+DUPLICATE DOC TO INSERT: utf_1973.txt is similar to ./in/utf_200.txt
+utf_947.txt inserted
+utf_577.txt inserted
+utf_1415.txt inserted
+utf_1350.txt inserted
+DUPLICATE DOC TO INSERT: utf_362.txt is similar to ./in/utf_1780.txt
+DUPLICATE DOC TO INSERT: utf_1704.txt is similar to ./in/utf_1684.txt
+utf_561.txt inserted
+utf_31.txt inserted
+utf_1446.txt inserted
+utf_1961.txt inserted
+utf_425.txt inserted
+DUPLICATE DOC TO INSERT: utf_854.txt is similar to ./in/utf_1342.txt
+utf_1802.txt inserted
+utf_642.txt inserted
+DUPLICATE DOC TO INSERT: utf_644.txt is similar to ./in/utf_1342.txt
+utf_1718.txt inserted
+DUPLICATE DOC TO INSERT: utf_827.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1617.txt is similar to ./in/utf_1684.txt
+utf_1816.txt inserted
+DUPLICATE DOC TO INSERT: utf_553.txt is similar to ./in/utf_1702.txt
+utf_439.txt inserted
+DUPLICATE DOC TO INSERT: utf_1434.txt is similar to ./in/utf_793.txt
+DUPLICATE DOC TO INSERT: utf_530.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_442.txt is similar to ./in/utf_265.txt
+utf_496.txt inserted
+utf_1528.txt inserted
+utf_487.txt inserted
+utf_580.txt inserted
+utf_523.txt inserted
+DUPLICATE DOC TO INSERT: utf_1690.txt is similar to ./in/utf_1342.txt
+utf_231.txt inserted
+utf_760.txt inserted
+utf_1075.txt inserted
+utf_1701.txt inserted
+DUPLICATE DOC TO INSERT: utf_1107.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_30.txt is similar to ./in/utf_680.txt
+utf_351.txt inserted
+DUPLICATE DOC TO INSERT: utf_852.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1303.txt is similar to ./in/utf_700.txt
+utf_604.txt inserted
+utf_1425.txt inserted
+utf_1207.txt inserted
+utf_1484.txt inserted
+DUPLICATE DOC TO INSERT: utf_969.txt is similar to ./in/utf_1342.txt
+utf_398.txt inserted
+utf_1600.txt inserted
+DUPLICATE DOC TO INSERT: utf_1040.txt is similar to ./in/utf_265.txt
+utf_1663.txt inserted
+utf_1622.txt inserted
+utf_1231.txt inserted
+utf_1356.txt inserted
+DUPLICATE DOC TO INSERT: utf_1941.txt is similar to ./in/utf_930.txt
+utf_1106.txt inserted
+DUPLICATE DOC TO INSERT: utf_693.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_609.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1144.txt is similar to ./in/utf_1684.txt
+utf_1324.txt inserted
+DUPLICATE DOC TO INSERT: utf_1147.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_868.txt is similar to ./in/utf_509.txt
+utf_328.txt inserted
+DUPLICATE DOC TO INSERT: utf_217.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_445.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1272.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_408.txt is similar to ./in/utf_631.txt
+DUPLICATE DOC TO INSERT: utf_421.txt is similar to ./in/utf_1530.txt
+DUPLICATE DOC TO INSERT: utf_1020.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_728.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1723.txt is similar to ./in/utf_1364.txt
+utf_830.txt inserted
+utf_126.txt inserted
+utf_1300.txt inserted
+utf_1386.txt inserted
+utf_1163.txt inserted
+DUPLICATE DOC TO INSERT: utf_1168.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_471.txt is similar to ./in/utf_1684.txt
+utf_821.txt inserted
+DUPLICATE DOC TO INSERT: utf_840.txt is similar to ./in/utf_1755.txt
+DUPLICATE DOC TO INSERT: utf_1533.txt is similar to ./in/utf_1709.txt
+DUPLICATE DOC TO INSERT: utf_469.txt is similar to ./in/utf_1684.txt
+utf_782.txt inserted
+utf_1383.txt inserted
+utf_1661.txt inserted
+utf_984.txt inserted
+DUPLICATE DOC TO INSERT: utf_376.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1050.txt is similar to ./in/utf_1684.txt
+utf_1452.txt inserted
+utf_228.txt inserted
+utf_1017.txt inserted
+DUPLICATE DOC TO INSERT: utf_1737.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_66.txt is similar to ./in/utf_1684.txt
+utf_834.txt inserted
+DUPLICATE DOC TO INSERT: utf_26.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_538.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_486.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1752.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_201.txt is similar to ./in/utf_1389.txt
+utf_142.txt inserted
+utf_1913.txt inserted
+utf_634.txt inserted
+DUPLICATE DOC TO INSERT: utf_485.txt is similar to ./in/utf_1342.txt
+utf_562.txt inserted
+utf_101.txt inserted
+utf_1410.txt inserted
+DUPLICATE DOC TO INSERT: utf_962.txt is similar to ./in/utf_1684.txt
+utf_1341.txt inserted
+utf_1462.txt inserted
+utf_1261.txt inserted
+DUPLICATE DOC TO INSERT: utf_1563.txt is similar to ./in/utf_1008.txt
+DUPLICATE DOC TO INSERT: utf_1003.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_660.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_701.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_1610.txt is similar to ./in/utf_1670.txt
+DUPLICATE DOC TO INSERT: utf_1049.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_543.txt is similar to ./in/utf_1686.txt
+DUPLICATE DOC TO INSERT: utf_261.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_309.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1860.txt is similar to ./in/utf_1684.txt
+utf_944.txt inserted
+utf_1798.txt inserted
+DUPLICATE DOC TO INSERT: utf_1548.txt is similar to ./in/utf_1342.txt
+utf_1495.txt inserted
+utf_1557.txt inserted
+utf_515.txt inserted
+utf_1213.txt inserted
+utf_209.txt inserted
+DUPLICATE DOC TO INSERT: utf_1518.txt is similar to ./in/utf_1684.txt
+utf_499.txt inserted
+utf_775.txt inserted
+utf_1456.txt inserted
+utf_1842.txt inserted
+utf_1781.txt inserted
+utf_314.txt inserted
+DUPLICATE DOC TO INSERT: utf_457.txt is similar to ./in/utf_1398.txt
+DUPLICATE DOC TO INSERT: utf_1893.txt is similar to ./in/utf_1842.txt
+DUPLICATE DOC TO INSERT: utf_1391.txt is similar to ./in/utf_1684.txt
+utf_690.txt inserted
+utf_567.txt inserted
+utf_1404.txt inserted
+DUPLICATE DOC TO INSERT: utf_1249.txt is similar to ./in/utf_700.txt
+utf_1571.txt inserted
+DUPLICATE DOC TO INSERT: utf_508.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1422.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_625.txt is similar to ./in/utf_1710.txt
+utf_859.txt inserted
+utf_1362.txt inserted
+utf_853.txt inserted
+utf_1437.txt inserted
+utf_1817.txt inserted
+utf_492.txt inserted
+utf_879.txt inserted
+DUPLICATE DOC TO INSERT: utf_514.txt is similar to ./in/utf_769.txt
+utf_1000.txt inserted
+utf_860.txt inserted
+utf_1267.txt inserted
+utf_1159.txt inserted
+utf_266.txt inserted
+DUPLICATE DOC TO INSERT: utf_1430.txt is similar to ./in/utf_1342.txt
+utf_1990.txt inserted
+utf_981.txt inserted
+DUPLICATE DOC TO INSERT: utf_1880.txt is similar to ./in/utf_1472.txt
+DUPLICATE DOC TO INSERT: utf_620.txt is similar to ./in/utf_1327.txt
+utf_495.txt inserted
+DUPLICATE DOC TO INSERT: utf_1187.txt is similar to ./in/utf_265.txt
+utf_332.txt inserted
+DUPLICATE DOC TO INSERT: utf_436.txt is similar to ./in/utf_220.txt
+utf_1830.txt inserted
+utf_1765.txt inserted
+utf_1448.txt inserted
+DUPLICATE DOC TO INSERT: utf_1091.txt is similar to ./in/utf_1745.txt
+utf_739.txt inserted
+utf_1794.txt inserted
+DUPLICATE DOC TO INSERT: utf_1058.txt is similar to ./in/utf_1342.txt
+utf_84.txt inserted
+utf_558.txt inserted
+utf_1139.txt inserted
+DUPLICATE DOC TO INSERT: utf_1978.txt is similar to ./in/utf_265.txt
+DUPLICATE DOC TO INSERT: utf_144.txt is similar to ./in/utf_1231.txt
+DUPLICATE DOC TO INSERT: utf_1904.txt is similar to ./in/utf_84.txt
+utf_417.txt inserted
+utf_190.txt inserted
+DUPLICATE DOC TO INSERT: utf_1104.txt is similar to ./in/utf_1008.txt
+utf_1054.txt inserted
+utf_1712.txt inserted
+utf_986.txt inserted
+utf_1569.txt inserted
+utf_874.txt inserted
+DUPLICATE DOC TO INSERT: utf_1431.txt is similar to ./in/utf_265.txt
+utf_740.txt inserted
+DUPLICATE DOC TO INSERT: utf_675.txt is similar to ./in/utf_1231.txt
+DUPLICATE DOC TO INSERT: utf_1084.txt is similar to ./in/utf_740.txt
+utf_1285.txt inserted
+DUPLICATE DOC TO INSERT: utf_454.txt is similar to ./in/utf_1231.txt
+DUPLICATE DOC TO INSERT: utf_47.txt is similar to ./in/utf_700.txt
+utf_1722.txt inserted
+DUPLICATE DOC TO INSERT: utf_983.txt is similar to ./in/utf_1722.txt
+utf_319.txt inserted
+utf_1450.txt inserted
+DUPLICATE DOC TO INSERT: utf_1294.txt is similar to ./in/utf_1011.txt
+utf_1902.txt inserted
+DUPLICATE DOC TO INSERT: utf_1706.txt is similar to ./in/utf_700.txt
+utf_1377.txt inserted
+utf_1295.txt inserted
+DUPLICATE DOC TO INSERT: utf_1110.txt is similar to ./in/utf_360.txt
+utf_169.txt inserted
+utf_589.txt inserted
+utf_301.txt inserted
+utf_347.txt inserted
+DUPLICATE DOC TO INSERT: utf_697.txt is similar to ./in/utf_1342.txt
+utf_333.txt inserted
+utf_449.txt inserted
+DUPLICATE DOC TO INSERT: utf_735.txt is similar to ./in/utf_1780.txt
+utf_1963.txt inserted
+utf_1536.txt inserted
+utf_1481.txt inserted
+DUPLICATE DOC TO INSERT: utf_926.txt is similar to ./in/utf_1342.txt
+utf_1022.txt inserted
+utf_1189.txt inserted
+DUPLICATE DOC TO INSERT: utf_1220.txt is similar to ./in/utf_1265.txt
+utf_78.txt inserted
+DUPLICATE DOC TO INSERT: utf_1715.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_820.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_796.txt is similar to ./in/utf_930.txt
+utf_1881.txt inserted
+DUPLICATE DOC TO INSERT: utf_115.txt is similar to ./in/utf_1684.txt
+utf_850.txt inserted
+DUPLICATE DOC TO INSERT: utf_1826.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_287.txt is similar to ./in/utf_1265.txt
+utf_459.txt inserted
+DUPLICATE DOC TO INSERT: utf_134.txt is similar to ./in/utf_1342.txt
+utf_726.txt inserted
+utf_1741.txt inserted
+utf_1100.txt inserted
+DUPLICATE DOC TO INSERT: utf_1118.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1514.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_474.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_364.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_292.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_69.txt is similar to ./in/utf_1881.txt
+utf_1695.txt inserted
+DUPLICATE DOC TO INSERT: utf_1597.txt is similar to ./in/utf_303.txt
+utf_795.txt inserted
+DUPLICATE DOC TO INSERT: utf_1094.txt is similar to ./in/utf_1684.txt
+utf_1397.txt inserted
+DUPLICATE DOC TO INSERT: utf_256.txt is similar to ./in/utf_1684.txt
+utf_247.txt inserted
+utf_1801.txt inserted
+DUPLICATE DOC TO INSERT: utf_646.txt is similar to ./in/utf_1684.txt
+utf_429.txt inserted
+DUPLICATE DOC TO INSERT: utf_1283.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_312.txt is similar to ./in/utf_1265.txt
+utf_617.txt inserted
+DUPLICATE DOC TO INSERT: utf_396.txt is similar to ./in/utf_1684.txt
+utf_1053.txt inserted
+DUPLICATE DOC TO INSERT: utf_1954.txt is similar to ./in/utf_1684.txt
+utf_1486.txt inserted
+utf_254.txt inserted
+DUPLICATE DOC TO INSERT: utf_1618.txt is similar to ./in/utf_429.txt
+utf_182.txt inserted
+DUPLICATE DOC TO INSERT: utf_117.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1793.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1689.txt is similar to ./in/utf_1342.txt
+utf_1738.txt inserted
+DUPLICATE DOC TO INSERT: utf_626.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1298.txt is similar to ./in/utf_1342.txt
+utf_1749.txt inserted
+DUPLICATE DOC TO INSERT: utf_168.txt is similar to ./in/utf_1265.txt
+utf_1488.txt inserted
+DUPLICATE DOC TO INSERT: utf_1367.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_139.txt is similar to ./in/utf_1342.txt
+utf_1274.txt inserted
+utf_385.txt inserted
+DUPLICATE DOC TO INSERT: utf_1583.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1322.txt is similar to ./in/utf_367.txt
+DUPLICATE DOC TO INSERT: utf_428.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1922.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_911.txt is similar to ./in/utf_429.txt
+utf_1950.txt inserted
+utf_809.txt inserted
+DUPLICATE DOC TO INSERT: utf_822.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_1671.txt is similar to ./in/utf_1881.txt
+DUPLICATE DOC TO INSERT: utf_1672.txt is similar to ./in/utf_1342.txt
+utf_406.txt inserted
+utf_1466.txt inserted
+DUPLICATE DOC TO INSERT: utf_14.txt is similar to ./in/utf_1371.txt
+DUPLICATE DOC TO INSERT: utf_221.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1841.txt is similar to ./in/utf_1265.txt
+utf_1994.txt inserted
+utf_972.txt inserted
+utf_1643.txt inserted
+utf_1503.txt inserted
+DUPLICATE DOC TO INSERT: utf_286.txt is similar to ./in/utf_907.txt
+DUPLICATE DOC TO INSERT: utf_1910.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1006.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1999.txt is similar to ./in/utf_182.txt
+DUPLICATE DOC TO INSERT: utf_131.txt is similar to ./in/utf_1684.txt
+utf_472.txt inserted
+utf_721.txt inserted
+utf_1097.txt inserted
+DUPLICATE DOC TO INSERT: utf_831.txt is similar to ./in/utf_360.txt
+utf_524.txt inserted
+utf_664.txt inserted
+DUPLICATE DOC TO INSERT: utf_196.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_1650.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1824.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1137.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1047.txt is similar to ./in/utf_1342.txt
+utf_1831.txt inserted
+DUPLICATE DOC TO INSERT: utf_320.txt is similar to ./in/utf_1684.txt
+utf_420.txt inserted
+utf_711.txt inserted
+utf_579.txt inserted
+DUPLICATE DOC TO INSERT: utf_1016.txt is similar to ./in/utf_1342.txt
+utf_1648.txt inserted
+DUPLICATE DOC TO INSERT: utf_1346.txt is similar to ./in/utf_1265.txt
+utf_1742.txt inserted
+DUPLICATE DOC TO INSERT: utf_671.txt is similar to ./in/utf_1342.txt
+utf_1602.txt inserted
+DUPLICATE DOC TO INSERT: utf_400.txt is similar to ./in/utf_1342.txt
+utf_207.txt inserted
+DUPLICATE DOC TO INSERT: utf_68.txt is similar to ./in/utf_1342.txt
+utf_1417.txt inserted
+DUPLICATE DOC TO INSERT: utf_1844.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1524.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1373.txt is similar to ./in/utf_1265.txt
+utf_628.txt inserted
+utf_1966.txt inserted
+DUPLICATE DOC TO INSERT: utf_92.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_990.txt is similar to ./in/utf_1385.txt
+utf_1727.txt inserted
+utf_1309.txt inserted
+DUPLICATE DOC TO INSERT: utf_361.txt is similar to ./in/utf_1342.txt
+utf_1657.txt inserted
+DUPLICATE DOC TO INSERT: utf_1721.txt is similar to ./in/utf_991.txt
+DUPLICATE DOC TO INSERT: utf_1800.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1306.txt is similar to ./in/utf_1684.txt
+utf_1024.txt inserted
+utf_1923.txt inserted
+DUPLICATE DOC TO INSERT: utf_1568.txt is similar to ./in/utf_1342.txt
+utf_1944.txt inserted
+DUPLICATE DOC TO INSERT: utf_1812.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1122.txt is similar to ./in/utf_1342.txt
+utf_1025.txt inserted
+utf_165.txt inserted
+utf_1392.txt inserted
+utf_1998.txt inserted
+utf_582.txt inserted
+DUPLICATE DOC TO INSERT: utf_135.txt is similar to ./in/utf_1342.txt
+utf_1344.txt inserted
+DUPLICATE DOC TO INSERT: utf_29.txt is similar to ./in/utf_1344.txt
+DUPLICATE DOC TO INSERT: utf_450.txt is similar to ./in/utf_1684.txt
+utf_70.txt inserted
+utf_1590.txt inserted
+DUPLICATE DOC TO INSERT: utf_1947.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1169.txt is similar to ./in/utf_70.txt
+DUPLICATE DOC TO INSERT: utf_645.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1550.txt is similar to ./in/utf_1416.txt
+DUPLICATE DOC TO INSERT: utf_715.txt is similar to ./in/utf_265.txt
+utf_35.txt inserted
+utf_1476.txt inserted
+DUPLICATE DOC TO INSERT: utf_1357.txt is similar to ./in/utf_1265.txt
+utf_102.txt inserted
+utf_1291.txt inserted
+DUPLICATE DOC TO INSERT: utf_490.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_937.txt is similar to ./in/utf_1385.txt
+utf_1764.txt inserted
+utf_1235.txt inserted
+utf_414.txt inserted
+utf_624.txt inserted
+utf_596.txt inserted
+utf_1987.txt inserted
+utf_42.txt inserted
+DUPLICATE DOC TO INSERT: utf_1384.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_483.txt is similar to ./in/utf_1342.txt
+utf_1029.txt inserted
+utf_992.txt inserted
+utf_150.txt inserted
+utf_1388.txt inserted
+utf_375.txt inserted
+utf_510.txt inserted
+DUPLICATE DOC TO INSERT: utf_1126.txt is similar to ./in/utf_1661.txt
+utf_902.txt inserted
+DUPLICATE DOC TO INSERT: utf_725.txt is similar to ./in/utf_1265.txt
+utf_818.txt inserted
+DUPLICATE DOC TO INSERT: utf_288.txt is similar to ./in/utf_1342.txt
+utf_1117.txt inserted
+DUPLICATE DOC TO INSERT: utf_1630.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_372.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1903.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1059.txt is similar to ./in/utf_1265.txt
+utf_95.txt inserted
+utf_51.txt inserted
+utf_648.txt inserted
+DUPLICATE DOC TO INSERT: utf_71.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_344.txt is similar to ./in/utf_763.txt
+utf_1573.txt inserted
+utf_478.txt inserted
+DUPLICATE DOC TO INSERT: utf_451.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_203.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_797.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_655.txt is similar to ./in/utf_1265.txt
+utf_22.txt inserted
+DUPLICATE DOC TO INSERT: utf_851.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1894.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_906.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1334.txt is similar to ./in/utf_95.txt
+DUPLICATE DOC TO INSERT: utf_1162.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_426.txt is similar to ./in/utf_1684.txt
+utf_566.txt inserted
+utf_493.txt inserted
+utf_931.txt inserted
+DUPLICATE DOC TO INSERT: utf_1958.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_537.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1624.txt is similar to ./in/utf_1032.txt
+utf_1974.txt inserted
+utf_1175.txt inserted
+DUPLICATE DOC TO INSERT: utf_386.txt is similar to ./in/utf_1684.txt
+utf_460.txt inserted
+utf_259.txt inserted
+DUPLICATE DOC TO INSERT: utf_1520.txt is similar to ./in/utf_1684.txt
+utf_1551.txt inserted
+DUPLICATE DOC TO INSERT: utf_1475.txt is similar to ./in/utf_1551.txt
+utf_1827.txt inserted
+DUPLICATE DOC TO INSERT: utf_1506.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_350.txt is similar to ./in/utf_1265.txt
+utf_826.txt inserted
+DUPLICATE DOC TO INSERT: utf_279.txt is similar to ./in/utf_493.txt
+DUPLICATE DOC TO INSERT: utf_1746.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_377.txt is similar to ./in/utf_758.txt
+utf_1632.txt inserted
+utf_695.txt inserted
+DUPLICATE DOC TO INSERT: utf_1153.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_476.txt is similar to ./in/utf_1342.txt
+utf_1526.txt inserted
+DUPLICATE DOC TO INSERT: utf_1264.txt is similar to ./in/utf_1265.txt
+utf_659.txt inserted
+DUPLICATE DOC TO INSERT: utf_212.txt is similar to ./in/utf_1709.txt
+DUPLICATE DOC TO INSERT: utf_777.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_250.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1414.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1316.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_234.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_402.txt is similar to ./in/utf_1551.txt
+utf_1863.txt inserted
+utf_104.txt inserted
+utf_1889.txt inserted
+DUPLICATE DOC TO INSERT: utf_1873.txt is similar to ./in/utf_1265.txt
+utf_761.txt inserted
+utf_226.txt inserted
+DUPLICATE DOC TO INSERT: utf_653.txt is similar to ./in/utf_1265.txt
+utf_1396.txt inserted
+utf_291.txt inserted
+DUPLICATE DOC TO INSERT: utf_1343.txt is similar to ./in/utf_1342.txt
+utf_337.txt inserted
+DUPLICATE DOC TO INSERT: utf_1625.txt is similar to ./in/utf_1078.txt
+DUPLICATE DOC TO INSERT: utf_452.txt is similar to ./in/utf_1684.txt
+utf_1504.txt inserted
+utf_341.txt inserted
+DUPLICATE DOC TO INSERT: utf_393.txt is similar to ./in/utf_1342.txt
+utf_819.txt inserted
+utf_1018.txt inserted
+utf_1145.txt inserted
+utf_1426.txt inserted
+DUPLICATE DOC TO INSERT: utf_643.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1355.txt is similar to ./in/utf_1342.txt
+utf_934.txt inserted
+DUPLICATE DOC TO INSERT: utf_1253.txt is similar to ./in/utf_200.txt
+DUPLICATE DOC TO INSERT: utf_434.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_536.txt is similar to ./in/utf_1342.txt
+utf_511.txt inserted
+DUPLICATE DOC TO INSERT: utf_448.txt is similar to ./in/utf_1342.txt
+utf_48.txt inserted
+utf_929.txt inserted
+utf_606.txt inserted
+utf_1535.txt inserted
+utf_1307.txt inserted
+DUPLICATE DOC TO INSERT: utf_358.txt is similar to ./in/utf_606.txt
+DUPLICATE DOC TO INSERT: utf_74.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1182.txt is similar to ./in/utf_648.txt
+utf_1157.txt inserted
+utf_194.txt inserted
+utf_844.txt inserted
+DUPLICATE DOC TO INSERT: utf_1585.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1969.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1335.txt is similar to ./in/utf_1342.txt
+utf_277.txt inserted
+utf_1733.txt inserted
+utf_44.txt inserted
+utf_100.txt inserted
+DUPLICATE DOC TO INSERT: utf_1512.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_186.txt is similar to ./in/utf_1342.txt
+utf_1436.txt inserted
+utf_401.txt inserted
+utf_93.txt inserted
+utf_968.txt inserted
+DUPLICATE DOC TO INSERT: utf_501.txt is similar to ./in/utf_78.txt
+utf_1282.txt inserted
+DUPLICATE DOC TO INSERT: utf_1971.txt is similar to ./in/utf_1342.txt
+utf_936.txt inserted
+DUPLICATE DOC TO INSERT: utf_1150.txt is similar to ./in/utf_695.txt
+DUPLICATE DOC TO INSERT: utf_621.txt is similar to ./in/utf_695.txt
+utf_1061.txt inserted
+utf_1850.txt inserted
+utf_1096.txt inserted
+utf_1042.txt inserted
+DUPLICATE DOC TO INSERT: utf_296.txt is similar to ./in/utf_1831.txt
+DUPLICATE DOC TO INSERT: utf_988.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1167.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_518.txt is similar to ./in/utf_758.txt
+utf_730.txt inserted
+utf_676.txt inserted
+DUPLICATE DOC TO INSERT: utf_124.txt is similar to ./in/utf_810.txt
+utf_681.txt inserted
+DUPLICATE DOC TO INSERT: utf_432.txt is similar to ./in/utf_1684.txt
+utf_1439.txt inserted
+utf_1056.txt inserted
+utf_836.txt inserted
+utf_1012.txt inserted
+utf_1646.txt inserted
+utf_1271.txt inserted
+utf_1705.txt inserted
+utf_1970.txt inserted
+utf_1286.txt inserted
+utf_1955.txt inserted
+utf_521.txt inserted
+DUPLICATE DOC TO INSERT: utf_1241.txt is similar to ./in/utf_1342.txt
+utf_1787.txt inserted
+DUPLICATE DOC TO INSERT: utf_1756.txt is similar to ./in/utf_1265.txt
+utf_1768.txt inserted
+DUPLICATE DOC TO INSERT: utf_1636.txt is similar to ./in/utf_1053.txt
+DUPLICATE DOC TO INSERT: utf_1754.txt is similar to ./in/utf_776.txt
+utf_1938.txt inserted
+utf_1605.txt inserted
+DUPLICATE DOC TO INSERT: utf_1136.txt is similar to ./in/utf_1749.txt
+utf_183.txt inserted
+utf_1081.txt inserted
+utf_1601.txt inserted
+utf_307.txt inserted
+utf_1124.txt inserted
+utf_1859.txt inserted
+utf_1064.txt inserted
+utf_1736.txt inserted
+DUPLICATE DOC TO INSERT: utf_1039.txt is similar to ./in/utf_472.txt
+DUPLICATE DOC TO INSERT: utf_1933.txt is similar to ./in/utf_1749.txt
+DUPLICATE DOC TO INSERT: utf_1843.txt is similar to ./in/utf_1342.txt
+utf_1896.txt inserted
+DUPLICATE DOC TO INSERT: utf_1473.txt is similar to ./in/utf_700.txt
+utf_1832.txt inserted
+DUPLICATE DOC TO INSERT: utf_155.txt is similar to ./in/utf_1342.txt
+utf_366.txt inserted
+DUPLICATE DOC TO INSERT: utf_678.txt is similar to ./in/utf_1342.txt
+utf_909.txt inserted
+utf_704.txt inserted
+DUPLICATE DOC TO INSERT: utf_1007.txt is similar to ./in/utf_1684.txt
+utf_252.txt inserted
+utf_176.txt inserted
+DUPLICATE DOC TO INSERT: utf_557.txt is similar to ./in/utf_1342.txt
+utf_1539.txt inserted
+utf_838.txt inserted
+DUPLICATE DOC TO INSERT: utf_742.txt is similar to ./in/utf_360.txt
+DUPLICATE DOC TO INSERT: utf_365.txt is similar to ./in/utf_1342.txt
+utf_848.txt inserted
+DUPLICATE DOC TO INSERT: utf_1171.txt is similar to ./in/utf_1342.txt
+utf_503.txt inserted
+utf_424.txt inserted
+utf_595.txt inserted
+utf_171.txt inserted
+DUPLICATE DOC TO INSERT: utf_302.txt is similar to ./in/utf_664.txt
+DUPLICATE DOC TO INSERT: utf_1972.txt is similar to ./in/utf_1342.txt
+utf_208.txt inserted
+DUPLICATE DOC TO INSERT: utf_1976.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1611.txt is similar to ./in/utf_1342.txt
+utf_1739.txt inserted
+utf_883.txt inserted
+utf_355.txt inserted
+utf_817.txt inserted
+DUPLICATE DOC TO INSERT: utf_1598.txt is similar to ./in/utf_1342.txt
+utf_1726.txt inserted
+DUPLICATE DOC TO INSERT: utf_1616.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_833.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_330.txt is similar to ./in/utf_360.txt
+utf_1013.txt inserted
+DUPLICATE DOC TO INSERT: utf_1116.txt is similar to ./in/utf_1342.txt
+utf_1640.txt inserted
+DUPLICATE DOC TO INSERT: utf_869.txt is similar to ./in/utf_1265.txt
+utf_1867.txt inserted
+utf_1062.txt inserted
+DUPLICATE DOC TO INSERT: utf_946.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1369.txt is similar to ./in/utf_1157.txt
+utf_619.txt inserted
+utf_559.txt inserted
+DUPLICATE DOC TO INSERT: utf_772.txt is similar to ./in/utf_817.txt
+utf_649.txt inserted
+DUPLICATE DOC TO INSERT: utf_748.txt is similar to ./in/utf_1342.txt
+utf_1731.txt inserted
+utf_941.txt inserted
+DUPLICATE DOC TO INSERT: utf_573.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_188.txt is similar to ./in/utf_375.txt
+utf_313.txt inserted
+DUPLICATE DOC TO INSERT: utf_1553.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1333.txt is similar to ./in/utf_1174.txt
+DUPLICATE DOC TO INSERT: utf_1255.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_272.txt is similar to ./in/utf_1342.txt
+utf_1760.txt inserted
+DUPLICATE DOC TO INSERT: utf_745.txt is similar to ./in/utf_1342.txt
+utf_1123.txt inserted
+DUPLICATE DOC TO INSERT: utf_232.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_191.txt is similar to ./in/utf_1143.txt
+DUPLICATE DOC TO INSERT: utf_37.txt is similar to ./in/utf_1646.txt
+utf_1424.txt inserted
+DUPLICATE DOC TO INSERT: utf_1811.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_895.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1596.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_790.txt is similar to ./in/utf_367.txt
+utf_1209.txt inserted
+utf_958.txt inserted
+DUPLICATE DOC TO INSERT: utf_759.txt is similar to ./in/utf_1265.txt
+utf_1204.txt inserted
+DUPLICATE DOC TO INSERT: utf_1320.txt is similar to ./in/utf_472.txt
+DUPLICATE DOC TO INSERT: utf_1485.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1549.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_162.txt is similar to ./in/utf_838.txt
+utf_16.txt inserted
+DUPLICATE DOC TO INSERT: utf_1325.txt is similar to ./in/utf_1342.txt
+utf_1501.txt inserted
+DUPLICATE DOC TO INSERT: utf_423.txt is similar to ./in/utf_1235.txt
+utf_1940.txt inserted
+DUPLICATE DOC TO INSERT: utf_326.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1268.txt is similar to ./in/utf_1342.txt
+utf_893.txt inserted
+DUPLICATE DOC TO INSERT: utf_145.txt is similar to ./in/utf_1342.txt
+utf_248.txt inserted
+DUPLICATE DOC TO INSERT: utf_779.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1898.txt is similar to ./in/utf_1881.txt
+utf_684.txt inserted
+DUPLICATE DOC TO INSERT: utf_1538.txt is similar to ./in/utf_1684.txt
+utf_28.txt inserted
+DUPLICATE DOC TO INSERT: utf_1296.txt is similar to ./in/utf_1684.txt
+utf_97.txt inserted
+DUPLICATE DOC TO INSERT: utf_199.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1892.txt is similar to ./in/utf_1342.txt
+utf_886.txt inserted
+utf_133.txt inserted
+utf_1217.txt inserted
+DUPLICATE DOC TO INSERT: utf_1606.txt is similar to ./in/utf_1416.txt
+DUPLICATE DOC TO INSERT: utf_1703.txt is similar to ./in/utf_1124.txt
+utf_192.txt inserted
+DUPLICATE DOC TO INSERT: utf_1729.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1835.txt is similar to ./in/utf_648.txt
+utf_1035.txt inserted
+DUPLICATE DOC TO INSERT: utf_1901.txt is similar to ./in/utf_902.txt
+utf_1639.txt inserted
+utf_1115.txt inserted
+utf_1188.txt inserted
+utf_565.txt inserted
+DUPLICATE DOC TO INSERT: utf_665.txt is similar to ./in/utf_606.txt
+utf_1499.txt inserted
+DUPLICATE DOC TO INSERT: utf_1651.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1665.txt is similar to ./in/utf_1342.txt
+utf_1675.txt inserted
+DUPLICATE DOC TO INSERT: utf_1318.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1127.txt is similar to ./in/utf_1342.txt
+utf_1351.txt inserted
+DUPLICATE DOC TO INSERT: utf_293.txt is similar to ./in/utf_1029.txt
+DUPLICATE DOC TO INSERT: utf_910.txt is similar to ./in/utf_510.txt
+utf_1045.txt inserted
+DUPLICATE DOC TO INSERT: utf_356.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_246.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1088.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1474.txt is similar to ./in/utf_472.txt
+utf_1161.txt inserted
+DUPLICATE DOC TO INSERT: utf_500.txt is similar to ./in/utf_291.txt
+DUPLICATE DOC TO INSERT: utf_1541.txt is similar to ./in/utf_819.txt
+DUPLICATE DOC TO INSERT: utf_1067.txt is similar to ./in/utf_1342.txt
+utf_61.txt inserted
+DUPLICATE DOC TO INSERT: utf_491.txt is similar to ./in/utf_1404.txt
+DUPLICATE DOC TO INSERT: utf_1299.txt is similar to ./in/utf_700.txt
+utf_654.txt inserted
+utf_656.txt inserted
+DUPLICATE DOC TO INSERT: utf_585.txt is similar to ./in/utf_656.txt
+DUPLICATE DOC TO INSERT: utf_694.txt is similar to ./in/utf_1342.txt
+utf_1262.txt inserted
+DUPLICATE DOC TO INSERT: utf_1292.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_1809.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_920.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_996.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_20.txt is similar to ./in/utf_78.txt
+utf_1260.txt inserted
+DUPLICATE DOC TO INSERT: utf_1696.txt is similar to ./in/utf_78.txt
+utf_404.txt inserted
+DUPLICATE DOC TO INSERT: utf_1687.txt is similar to ./in/utf_1342.txt
+utf_669.txt inserted
+DUPLICATE DOC TO INSERT: utf_1655.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1931.txt is similar to ./in/utf_1265.txt
+utf_1511.txt inserted
+DUPLICATE DOC TO INSERT: utf_1148.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_494.txt is similar to ./in/utf_1265.txt
+utf_1311.txt inserted
+utf_369.txt inserted
+DUPLICATE DOC TO INSERT: utf_335.txt is similar to ./in/utf_1733.txt
+DUPLICATE DOC TO INSERT: utf_167.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1131.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1304.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1457.txt is similar to ./in/utf_200.txt
+DUPLICATE DOC TO INSERT: utf_712.txt is similar to ./in/utf_1342.txt
+utf_1888.txt inserted
+utf_465.txt inserted
+DUPLICATE DOC TO INSERT: utf_45.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1270.txt is similar to ./in/utf_567.txt
+utf_1337.txt inserted
+utf_46.txt inserted
+DUPLICATE DOC TO INSERT: utf_1846.txt is similar to ./in/utf_1684.txt
+utf_1179.txt inserted
+DUPLICATE DOC TO INSERT: utf_1906.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1581.txt is similar to ./in/utf_1081.txt
+DUPLICATE DOC TO INSERT: utf_1537.txt is similar to ./in/utf_1916.txt
+DUPLICATE DOC TO INSERT: utf_616.txt is similar to ./in/utf_1472.txt
+utf_966.txt inserted
+DUPLICATE DOC TO INSERT: utf_1199.txt is similar to ./in/utf_966.txt
+utf_806.txt inserted
+utf_151.txt inserted
+DUPLICATE DOC TO INSERT: utf_497.txt is similar to ./in/utf_1265.txt
+utf_1034.txt inserted
+utf_723.txt inserted
+DUPLICATE DOC TO INSERT: utf_1063.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1895.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_118.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_156.txt is similar to ./in/utf_1684.txt
+utf_238.txt inserted
+DUPLICATE DOC TO INSERT: utf_586.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_770.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_610.txt is similar to ./in/utf_1731.txt
+DUPLICATE DOC TO INSERT: utf_315.txt is similar to ./in/utf_154.txt
+DUPLICATE DOC TO INSERT: utf_427.txt is similar to ./in/utf_1684.txt
+utf_1055.txt inserted
+DUPLICATE DOC TO INSERT: utf_1073.txt is similar to ./in/utf_1342.txt
+utf_1935.txt inserted
+DUPLICATE DOC TO INSERT: utf_1099.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_1433.txt is similar to ./in/utf_1342.txt
+utf_383.txt inserted
+utf_651.txt inserted
+DUPLICATE DOC TO INSERT: utf_1200.txt is similar to ./in/utf_1117.txt
+utf_1493.txt inserted
+DUPLICATE DOC TO INSERT: utf_1280.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_737.txt is similar to ./in/utf_700.txt
+utf_1038.txt inserted
+DUPLICATE DOC TO INSERT: utf_1949.txt is similar to ./in/utf_1185.txt
+utf_1948.txt inserted
+utf_1363.txt inserted
+DUPLICATE DOC TO INSERT: utf_1411.txt is similar to ./in/utf_567.txt
+DUPLICATE DOC TO INSERT: utf_1542.txt is similar to ./in/utf_1639.txt
+utf_1968.txt inserted
+utf_399.txt inserted
+utf_1317.txt inserted
+DUPLICATE DOC TO INSERT: utf_1886.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_36.txt is similar to ./in/utf_582.txt
+utf_741.txt inserted
+DUPLICATE DOC TO INSERT: utf_1797.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1932.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_329.txt is similar to ./in/utf_1342.txt
+utf_792.txt inserted
+utf_127.txt inserted
+utf_1251.txt inserted
+DUPLICATE DOC TO INSERT: utf_955.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1552.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1595.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_108.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_832.txt is similar to ./in/utf_1342.txt
+utf_1120.txt inserted
+DUPLICATE DOC TO INSERT: utf_1215.txt is similar to ./in/utf_1587.txt
+DUPLICATE DOC TO INSERT: utf_76.txt is similar to ./in/utf_1265.txt
+utf_872.txt inserted
+DUPLICATE DOC TO INSERT: utf_1779.txt is similar to ./in/utf_1188.txt
+utf_554.txt inserted
+DUPLICATE DOC TO INSERT: utf_321.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_749.txt is similar to ./in/utf_1970.txt
+DUPLICATE DOC TO INSERT: utf_1576.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1688.txt is similar to ./in/utf_941.txt
+DUPLICATE DOC TO INSERT: utf_1997.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_804.txt is similar to ./in/utf_1684.txt
+utf_1786.txt inserted
+DUPLICATE DOC TO INSERT: utf_1141.txt is similar to ./in/utf_1217.txt
+DUPLICATE DOC TO INSERT: utf_295.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_942.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1353.txt is similar to ./in/utf_1231.txt
+utf_484.txt inserted
+utf_689.txt inserted
+DUPLICATE DOC TO INSERT: utf_1464.txt is similar to ./in/utf_1100.txt
+DUPLICATE DOC TO INSERT: utf_823.txt is similar to ./in/utf_1265.txt
+utf_548.txt inserted
+DUPLICATE DOC TO INSERT: utf_157.txt is similar to ./in/utf_1342.txt
+utf_1829.txt inserted
+DUPLICATE DOC TO INSERT: utf_1959.txt is similar to ./in/utf_1342.txt
+utf_1036.txt inserted
+DUPLICATE DOC TO INSERT: utf_306.txt is similar to ./in/utf_1646.txt
+DUPLICATE DOC TO INSERT: utf_1247.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_727.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_1221.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1660.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_590.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_925.txt is similar to ./in/utf_1439.txt
+DUPLICATE DOC TO INSERT: utf_1400.txt is similar to ./in/utf_1646.txt
+utf_670.txt inserted
+DUPLICATE DOC TO INSERT: utf_602.txt is similar to ./in/utf_1034.txt
+DUPLICATE DOC TO INSERT: utf_1429.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_623.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_627.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1833.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1855.txt is similar to ./in/utf_1342.txt
+utf_1421.txt inserted
+DUPLICATE DOC TO INSERT: utf_1358.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_446.txt is similar to ./in/utf_78.txt
+utf_114.txt inserted
+DUPLICATE DOC TO INSERT: utf_1845.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_1440.txt is similar to ./in/utf_367.txt
+DUPLICATE DOC TO INSERT: utf_575.txt is similar to ./in/utf_1387.txt
+DUPLICATE DOC TO INSERT: utf_998.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_204.txt is similar to ./in/utf_208.txt
+DUPLICATE DOC TO INSERT: utf_889.txt is similar to ./in/utf_1265.txt
+utf_1979.txt inserted
+DUPLICATE DOC TO INSERT: utf_1854.txt is similar to ./in/utf_1935.txt
+utf_1129.txt inserted
+utf_340.txt inserted
+utf_1740.txt inserted
+DUPLICATE DOC TO INSERT: utf_1093.txt is similar to ./in/utf_360.txt
+utf_1246.txt inserted
+DUPLICATE DOC TO INSERT: utf_1460.txt is similar to ./in/utf_100.txt
+DUPLICATE DOC TO INSERT: utf_1370.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_927.txt is similar to ./in/utf_1342.txt
+utf_1211.txt inserted
+utf_1374.txt inserted
+utf_636.txt inserted
+utf_1308.txt inserted
+DUPLICATE DOC TO INSERT: utf_1269.txt is similar to ./in/utf_1674.txt
+utf_959.txt inserted
+DUPLICATE DOC TO INSERT: utf_58.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_765.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_422.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_787.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1580.txt is similar to ./in/utf_1342.txt
+utf_825.txt inserted
+DUPLICATE DOC TO INSERT: utf_696.txt is similar to ./in/utf_1709.txt
+utf_1638.txt inserted
+DUPLICATE DOC TO INSERT: utf_570.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1196.txt is similar to ./in/utf_1342.txt
+utf_1348.txt inserted
+utf_1981.txt inserted
+utf_1441.txt inserted
+DUPLICATE DOC TO INSERT: utf_732.txt is similar to ./in/utf_761.txt
+DUPLICATE DOC TO INSERT: utf_1489.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1864.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_956.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_615.txt is similar to ./in/utf_786.txt
+DUPLICATE DOC TO INSERT: utf_1866.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1917.txt is similar to ./in/utf_1684.txt
+utf_1720.txt inserted
+DUPLICATE DOC TO INSERT: utf_1762.txt is similar to ./in/utf_1684.txt
+utf_1491.txt inserted
+utf_1694.txt inserted
+DUPLICATE DOC TO INSERT: utf_397.txt is similar to ./in/utf_1684.txt
+utf_1508.txt inserted
+DUPLICATE DOC TO INSERT: utf_877.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_544.txt is similar to ./in/utf_1850.txt
+utf_1406.txt inserted
+utf_430.txt inserted
+DUPLICATE DOC TO INSERT: utf_953.txt is similar to ./in/utf_700.txt
+DUPLICATE DOC TO INSERT: utf_354.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_672.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1604.txt is similar to ./in/utf_1342.txt
+utf_731.txt inserted
+DUPLICATE DOC TO INSERT: utf_526.txt is similar to ./in/utf_1029.txt
+DUPLICATE DOC TO INSERT: utf_1156.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1376.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1227.txt is similar to ./in/utf_200.txt
+DUPLICATE DOC TO INSERT: utf_1882.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_268.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_788.txt is similar to ./in/utf_226.txt
+utf_552.txt inserted
+utf_1254.txt inserted
+DUPLICATE DOC TO INSERT: utf_752.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1109.txt is similar to ./in/utf_1684.txt
+utf_1521.txt inserted
+utf_409.txt inserted
+DUPLICATE DOC TO INSERT: utf_938.txt is similar to ./in/utf_1859.txt
+DUPLICATE DOC TO INSERT: utf_338.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_235.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_923.txt is similar to ./in/utf_1863.txt
+DUPLICATE DOC TO INSERT: utf_52.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_122.txt is similar to ./in/utf_1439.txt
+DUPLICATE DOC TO INSERT: utf_1098.txt is similar to ./in/utf_1342.txt
+utf_1233.txt inserted
+DUPLICATE DOC TO INSERT: utf_1449.txt is similar to ./in/utf_385.txt
+DUPLICATE DOC TO INSERT: utf_541.txt is similar to ./in/utf_360.txt
+DUPLICATE DOC TO INSERT: utf_903.txt is similar to ./in/utf_844.txt
+DUPLICATE DOC TO INSERT: utf_794.txt is similar to ./in/utf_761.txt
+utf_880.txt inserted
+utf_53.txt inserted
+utf_1560.txt inserted
+DUPLICATE DOC TO INSERT: utf_1529.txt is similar to ./in/utf_1342.txt
+utf_15.txt inserted
+DUPLICATE DOC TO INSERT: utf_1095.txt is similar to ./in/utf_1684.txt
+utf_899.txt inserted
+DUPLICATE DOC TO INSERT: utf_1591.txt is similar to ./in/utf_1573.txt
+DUPLICATE DOC TO INSERT: utf_1015.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_766.txt is similar to ./in/utf_1117.txt
+DUPLICATE DOC TO INSERT: utf_572.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1711.txt is similar to ./in/utf_1342.txt
+utf_443.txt inserted
+DUPLICATE DOC TO INSERT: utf_149.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1085.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1928.txt is similar to ./in/utf_1154.txt
+DUPLICATE DOC TO INSERT: utf_395.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_901.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_189.txt is similar to ./in/utf_1342.txt
+utf_949.txt inserted
+utf_722.txt inserted
+utf_1869.txt inserted
+utf_1785.txt inserted
+utf_1477.txt inserted
+utf_560.txt inserted
+utf_1555.txt inserted
+utf_1372.txt inserted
+utf_1627.txt inserted
+DUPLICATE DOC TO INSERT: utf_298.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1681.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_835.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1609.txt is similar to ./in/utf_1404.txt
+DUPLICATE DOC TO INSERT: utf_729.txt is similar to ./in/utf_1265.txt
+utf_285.txt inserted
+DUPLICATE DOC TO INSERT: utf_148.txt is similar to ./in/utf_1265.txt
+utf_128.txt inserted
+utf_219.txt inserted
+utf_1872.txt inserted
+DUPLICATE DOC TO INSERT: utf_343.txt is similar to ./in/utf_18.txt
+DUPLICATE DOC TO INSERT: utf_1767.txt is similar to ./in/utf_1265.txt
+utf_1258.txt inserted
+DUPLICATE DOC TO INSERT: utf_1423.txt is similar to ./in/utf_1684.txt
+utf_720.txt inserted
+DUPLICATE DOC TO INSERT: utf_686.txt is similar to ./in/utf_1709.txt
+utf_1993.txt inserted
+utf_1245.txt inserted
+utf_467.txt inserted
+DUPLICATE DOC TO INSERT: utf_82.txt is similar to ./in/utf_200.txt
+DUPLICATE DOC TO INSERT: utf_462.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_719.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_922.txt is similar to ./in/utf_1203.txt
+utf_1890.txt inserted
+DUPLICATE DOC TO INSERT: utf_939.txt is similar to ./in/utf_1587.txt
+utf_1206.txt inserted
+DUPLICATE DOC TO INSERT: utf_184.txt is similar to ./in/utf_1193.txt
+DUPLICATE DOC TO INSERT: utf_1790.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1134.txt is similar to ./in/utf_1342.txt
+utf_1394.txt inserted
+utf_431.txt inserted
+DUPLICATE DOC TO INSERT: utf_1633.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_481.txt is similar to ./in/utf_1702.txt
+DUPLICATE DOC TO INSERT: utf_391.txt is similar to ./in/utf_950.txt
+DUPLICATE DOC TO INSERT: utf_1678.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_205.txt is similar to ./in/utf_1342.txt
+utf_650.txt inserted
+DUPLICATE DOC TO INSERT: utf_858.txt is similar to ./in/utf_1684.txt
+utf_1289.txt inserted
+DUPLICATE DOC TO INSERT: utf_534.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1275.txt is similar to ./in/utf_1265.txt
+utf_885.txt inserted
+utf_1074.txt inserted
+utf_368.txt inserted
+DUPLICATE DOC TO INSERT: utf_185.txt is similar to ./in/utf_1709.txt
+DUPLICATE DOC TO INSERT: utf_1851.txt is similar to ./in/utf_239.txt
+utf_673.txt inserted
+DUPLICATE DOC TO INSERT: utf_1652.txt is similar to ./in/utf_1017.txt
+DUPLICATE DOC TO INSERT: utf_1848.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_963.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1564.txt is similar to ./in/utf_1684.txt
+utf_1492.txt inserted
+DUPLICATE DOC TO INSERT: utf_1230.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1390.txt is similar to ./in/utf_1189.txt
+DUPLICATE DOC TO INSERT: utf_1546.txt is similar to ./in/utf_1755.txt
+DUPLICATE DOC TO INSERT: utf_1290.txt is similar to ./in/utf_1342.txt
+utf_943.txt inserted
+utf_300.txt inserted
+utf_1301.txt inserted
+DUPLICATE DOC TO INSERT: utf_637.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1329.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_1799.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_112.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_979.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_39.txt is similar to ./in/utf_670.txt
+DUPLICATE DOC TO INSERT: utf_598.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_1628.txt is similar to ./in/utf_1265.txt
+utf_652.txt inserted
+DUPLICATE DOC TO INSERT: utf_1544.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_163.txt is similar to ./in/utf_1265.txt
+utf_781.txt inserted
+utf_1673.txt inserted
+DUPLICATE DOC TO INSERT: utf_1445.txt is similar to ./in/utf_1364.txt
+DUPLICATE DOC TO INSERT: utf_1574.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_57.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1773.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_744.txt is similar to ./in/utf_325.txt
+utf_477.txt inserted
+DUPLICATE DOC TO INSERT: utf_19.txt is similar to ./in/utf_1163.txt
+utf_461.txt inserted
+DUPLICATE DOC TO INSERT: utf_1908.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_811.txt is similar to ./in/utf_1342.txt
+utf_1315.txt inserted
+DUPLICATE DOC TO INSERT: utf_785.txt is similar to ./in/utf_1265.txt
+utf_1467.txt inserted
+utf_1352.txt inserted
+DUPLICATE DOC TO INSERT: utf_1725.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_498.txt is similar to ./in/utf_1684.txt
+utf_1413.txt inserted
+utf_1823.txt inserted
+utf_1266.txt inserted
+DUPLICATE DOC TO INSERT: utf_774.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_388.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_635.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1345.txt is similar to ./in/utf_907.txt
+utf_12.txt inserted
+DUPLICATE DOC TO INSERT: utf_1608.txt is similar to ./in/utf_1265.txt
+utf_105.txt inserted
+DUPLICATE DOC TO INSERT: utf_243.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1945.txt is similar to ./in/utf_1342.txt
+utf_682.txt inserted
+DUPLICATE DOC TO INSERT: utf_98.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1744.txt is similar to ./in/utf_769.txt
+DUPLICATE DOC TO INSERT: utf_1743.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1302.txt is similar to ./in/utf_1342.txt
+utf_674.txt inserted
+DUPLICATE DOC TO INSERT: utf_120.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1565.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1232.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_603.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_218.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1155.txt is similar to ./in/utf_1191.txt
+DUPLICATE DOC TO INSERT: utf_264.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_489.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1498.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_336.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1714.txt is similar to ./in/utf_1265.txt
+utf_363.txt inserted
+DUPLICATE DOC TO INSERT: utf_1735.txt is similar to ./in/utf_782.txt
+DUPLICATE DOC TO INSERT: utf_771.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_864.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_318.txt is similar to ./in/utf_371.txt
+DUPLICATE DOC TO INSERT: utf_1635.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1164.txt is similar to ./in/utf_1265.txt
+utf_1281.txt inserted
+utf_718.txt inserted
+DUPLICATE DOC TO INSERT: utf_995.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1037.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_800.txt is similar to ./in/utf_1265.txt
+utf_1471.txt inserted
+DUPLICATE DOC TO INSERT: utf_618.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_703.txt is similar to ./in/utf_1342.txt
+utf_1420.txt inserted
+DUPLICATE DOC TO INSERT: utf_119.txt is similar to ./in/utf_1342.txt
+utf_1026.txt inserted
+DUPLICATE DOC TO INSERT: utf_768.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1806.txt is similar to ./in/utf_371.txt
+DUPLICATE DOC TO INSERT: utf_263.txt is similar to ./in/utf_763.txt
+DUPLICATE DOC TO INSERT: utf_359.txt is similar to ./in/utf_1010.txt
+DUPLICATE DOC TO INSERT: utf_633.txt is similar to ./in/utf_1342.txt
+utf_87.txt inserted
+utf_612.txt inserted
+utf_1778.txt inserted
+DUPLICATE DOC TO INSERT: utf_976.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_977.txt is similar to ./in/utf_1684.txt
+utf_1125.txt inserted
+DUPLICATE DOC TO INSERT: utf_813.txt is similar to ./in/utf_550.txt
+DUPLICATE DOC TO INSERT: utf_75.txt is similar to ./in/utf_1342.txt
+utf_1588.txt inserted
+utf_1962.txt inserted
+DUPLICATE DOC TO INSERT: utf_1128.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_784.txt is similar to ./in/utf_1684.txt
+utf_65.txt inserted
+DUPLICATE DOC TO INSERT: utf_975.txt is similar to ./in/utf_1755.txt
+utf_1149.txt inserted
+utf_705.txt inserted
+DUPLICATE DOC TO INSERT: utf_346.txt is similar to ./in/utf_700.txt
+utf_81.txt inserted
+utf_1676.txt inserted
+utf_1750.txt inserted
+DUPLICATE DOC TO INSERT: utf_1700.txt is similar to ./in/utf_1555.txt
+DUPLICATE DOC TO INSERT: utf_1243.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_757.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1393.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_1956.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_549.txt is similar to ./in/utf_1265.txt
+utf_1547.txt inserted
+utf_113.txt inserted
+DUPLICATE DOC TO INSERT: utf_275.txt is similar to ./in/utf_1421.txt
+utf_1338.txt inserted
+DUPLICATE DOC TO INSERT: utf_803.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_657.txt is similar to ./in/utf_1301.txt
+DUPLICATE DOC TO INSERT: utf_1079.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_1840.txt is similar to ./in/utf_1385.txt
+DUPLICATE DOC TO INSERT: utf_116.txt is similar to ./in/utf_1702.txt
+DUPLICATE DOC TO INSERT: utf_410.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_32.txt is similar to ./in/utf_1108.txt
+utf_881.txt inserted
+DUPLICATE DOC TO INSERT: utf_1381.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1435.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_413.txt is similar to ./in/utf_1265.txt
+utf_1803.txt inserted
+DUPLICATE DOC TO INSERT: utf_1442.txt is similar to ./in/utf_1342.txt
+utf_1936.txt inserted
+DUPLICATE DOC TO INSERT: utf_807.txt is similar to ./in/utf_1342.txt
+utf_529.txt inserted
+utf_1192.txt inserted
+utf_545.txt inserted
+DUPLICATE DOC TO INSERT: utf_767.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_519.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1965.txt is similar to ./in/utf_1684.txt
+utf_299.txt inserted
+utf_1250.txt inserted
+utf_1732.txt inserted
+DUPLICATE DOC TO INSERT: utf_816.txt is similar to ./in/utf_1587.txt
+DUPLICATE DOC TO INSERT: utf_475.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_601.txt is similar to ./in/utf_239.txt
+DUPLICATE DOC TO INSERT: utf_1919.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_106.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_973.txt is similar to ./in/utf_1623.txt
+DUPLICATE DOC TO INSERT: utf_801.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1023.txt is similar to ./in/utf_1342.txt
+utf_121.txt inserted
+utf_1340.txt inserted
+utf_281.txt inserted
+utf_1868.txt inserted
+DUPLICATE DOC TO INSERT: utf_1792.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1516.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_685.txt is similar to ./in/utf_1265.txt
+utf_1870.txt inserted
+DUPLICATE DOC TO INSERT: utf_1009.txt is similar to ./in/utf_907.txt
+DUPLICATE DOC TO INSERT: utf_1256.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_161.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_38.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_948.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1069.txt is similar to ./in/utf_758.txt
+DUPLICATE DOC TO INSERT: utf_555.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1772.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_847.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_136.txt is similar to ./in/utf_1684.txt
+DUPLICATE DOC TO INSERT: utf_1761.txt is similar to ./in/utf_587.txt
+DUPLICATE DOC TO INSERT: utf_1102.txt is similar to ./in/utf_1813.txt
+DUPLICATE DOC TO INSERT: utf_882.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1885.txt is similar to ./in/utf_1072.txt
+DUPLICATE DOC TO INSERT: utf_1349.txt is similar to ./in/utf_1265.txt
+utf_1190.txt inserted
+utf_773.txt inserted
+DUPLICATE DOC TO INSERT: utf_1852.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1900.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_418.txt is similar to ./in/utf_200.txt
+DUPLICATE DOC TO INSERT: utf_1505.txt is similar to ./in/utf_1265.txt
+utf_957.txt inserted
+utf_214.txt inserted
+DUPLICATE DOC TO INSERT: utf_1980.txt is similar to ./in/utf_1342.txt
+utf_349.txt inserted
+DUPLICATE DOC TO INSERT: utf_1194.txt is similar to ./in/utf_1265.txt
+utf_1140.txt inserted
+utf_236.txt inserted
+utf_488.txt inserted
+DUPLICATE DOC TO INSERT: utf_289.txt is similar to ./in/utf_776.txt
+DUPLICATE DOC TO INSERT: utf_1080.txt is similar to ./in/utf_950.txt
+utf_1323.txt inserted
+DUPLICATE DOC TO INSERT: utf_64.txt is similar to ./in/utf_1265.txt
+utf_688.txt inserted
+utf_1482.txt inserted
+DUPLICATE DOC TO INSERT: utf_891.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1911.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1927.txt is similar to ./in/utf_1265.txt
+utf_274.txt inserted
+utf_805.txt inserted
+DUPLICATE DOC TO INSERT: utf_1328.txt is similar to ./in/utf_1342.txt
+utf_662.txt inserted
+utf_935.txt inserted
+DUPLICATE DOC TO INSERT: utf_89.txt is similar to ./in/utf_1265.txt
+utf_843.txt inserted
+DUPLICATE DOC TO INSERT: utf_522.txt is similar to ./in/utf_1265.txt
+utf_502.txt inserted
+DUPLICATE DOC TO INSERT: utf_588.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1770.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1314.txt is similar to ./in/utf_1111.txt
+utf_1257.txt inserted
+DUPLICATE DOC TO INSERT: utf_717.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1784.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1708.txt is similar to ./in/utf_1342.txt
+utf_1838.txt inserted
+utf_1403.txt inserted
+utf_1982.txt inserted
+DUPLICATE DOC TO INSERT: utf_1807.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1310.txt is similar to ./in/utf_1342.txt
+DUPLICATE DOC TO INSERT: utf_1934.txt is similar to ./in/utf_1684.txt
+utf_1592.txt inserted
+utf_1195.txt inserted
+DUPLICATE DOC TO INSERT: utf_1030.txt is similar to ./in/utf_1755.txt
+DUPLICATE DOC TO INSERT: utf_1677.txt is similar to ./in/utf_1265.txt
+DUPLICATE DOC TO INSERT: utf_1152.txt is similar to ./in/utf_1342.txt
+utf_342.txt inserted
+DUPLICATE DOC TO INSERT: utf_1339.txt is similar to ./in/utf_1684.txt
+utf_647.txt inserted
+utf_1068.txt inserted
+DUPLICATE DOC TO INSERT: utf_1730.txt is similar to ./in/utf_1342.txt
