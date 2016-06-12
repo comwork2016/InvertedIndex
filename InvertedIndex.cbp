@@ -46,20 +46,28 @@
 		</Compiler>
 		<Unit filename="include/DataStructure.h" />
 		<Unit filename="include/content/Document.h" />
+		<Unit filename="include/content/Sememe.h" />
 		<Unit filename="include/content/WordIndex.h" />
 		<Unit filename="include/content/WordIndexRecord.h" />
 		<Unit filename="include/corpus/ReadCorpus.h" />
 		<Unit filename="include/dao/DocumentDao.h" />
+		<Unit filename="include/dao/GlossaryDao.h" />
 		<Unit filename="include/service/DocumentOperation.h" />
+		<Unit filename="include/service/SentenceSimilarity.h" />
+		<Unit filename="include/service/WordSimilarity.h" />
 		<Unit filename="include/util/HashUtil.h" />
 		<Unit filename="include/util/StringUtil.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/content/Document.cpp" />
+		<Unit filename="src/content/Sememe.cpp" />
 		<Unit filename="src/content/WordIndex.cpp" />
 		<Unit filename="src/content/WordIndexRecord.cpp" />
 		<Unit filename="src/corpus/ReadCorpus.cpp" />
 		<Unit filename="src/dao/DocumentDao.cpp" />
+		<Unit filename="src/dao/GlossaryDao.cpp" />
 		<Unit filename="src/service/DocumentOperation.cpp" />
+		<Unit filename="src/service/SentenceSimilarity.cpp" />
+		<Unit filename="src/service/WordSimilarity.cpp" />
 		<Unit filename="src/util/HashUtil.cpp" />
 		<Unit filename="src/util/StringUtil.cpp" />
 		<Extensions>

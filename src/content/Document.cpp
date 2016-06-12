@@ -1,6 +1,6 @@
 #include "Document.h"
 
-Document::Document(const std::string& str_DocPath, bool b_Split)
+Document::Document(const std::string& str_DocPath, bool b_Split,bool b_LeakDoc)
 {
     //ctor
     this->m_DocID = str_DocPath;
@@ -28,6 +28,9 @@ Document::Document(const std::string& str_DocPath, bool b_Split)
         }
         SplitSentenceToWords();
         CalcDocSimHash();
+        if(b_LeakDoc)//是带查询的泄露文档时，将句子分成KGRAM
+        {
+        }
     }
     else
     {

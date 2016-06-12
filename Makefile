@@ -1,4 +1,4 @@
-objs=obj/ReadCorpus.o obj/StringUtil.o obj/HashUtil.o obj/Document.o obj/WordIndexRecord.o obj/WordIndex.o obj/DocumentOperation.o obj/DocumentDao.o obj/main.o 
+objs=obj/ReadCorpus.o obj/StringUtil.o obj/HashUtil.o obj/Document.o obj/WordIndexRecord.o obj/WordIndex.o obj/DocumentOperation.o obj/DocumentDao.o  obj/Sememe.o obj/GlossaryDao.o obj/WordSimilarity.o  obj/SentenceSimilarity.o obj/main.o 
 
 CPPINCLUDE=-Iinclude -Iinclude/corpus -Iinclude/content -Iinclude/util -Iinclude/service -Iinclude/dao
 BOOSTINCLUDE=-pthread -lmongoclient -lboost_thread -lboost_filesystem -lboost_program_options -lboost_system

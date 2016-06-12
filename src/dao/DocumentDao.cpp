@@ -189,6 +189,9 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
                 {
                     DOC_ID docID = it->first;
                     WordIndexRecord* record = it->second;
+                    std::cout<<str_Word<<std::endl;
+                    record->Display();
+                    std::cout<<std::endl<<std::endl;
                     std::set<DOCSENPAIR> set_DocSenPair;
                     for(int m=0; m<record->GetVecPos().size(); m++) //遍历词语在文档中的位置
                     {
@@ -211,12 +214,16 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
                 if(n_DocCount >= n_SameWordGate)
                 {
                     vec_DocSen.push_back(pair_DocSen);
+                    std::cout<<pair_DocSen.first<<"\t"<<pair_DocSen.second<<std::endl;
                 }
             }
             //计算含有相同句子的相似度
             for(int k=0; k<vec_DocSen.size(); k++)
             {
-                //double d_similarity = CalcSentenceSimilarity();
+                std::string str1;
+                std::string str2;
+                double d_similarity = SentenceSimilarity::CalcSentenceSimilarity(str1,str2);
+                std::cout<<str1<<std::endl<<str2<<std::endl<<d_similarity<<std::endl;
             }
         }
     }

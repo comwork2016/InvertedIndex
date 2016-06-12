@@ -19,7 +19,7 @@
 class Document
 {
     public:
-        Document(const std::string& str_DocPath,bool b_Split = false);
+        Document(const std::string& str_DocPath,bool b_Split = false,bool b_LeakDoc = false);
         virtual ~Document();
 
         DOC_ID GetDocID() const { return m_DocID; }
