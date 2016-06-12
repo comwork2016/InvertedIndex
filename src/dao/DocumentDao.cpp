@@ -33,7 +33,10 @@ std::map<DOC_ID,WordIndexRecord*> DocumentDao::QueryIndexOfWord(const std::strin
             for(mongo::BSONObjIterator itr = arrPos.begin(); itr.more();)
             {
                 mongo::BSONObj bson_Pos = itr.next().Obj();
-                wordIndexRecord->AddPosInfo(bson_Pos.getIntField("pos"));
+                int n_WordPos = bson_Pos.getIntField("wordpos");
+                int n_SenPos = bson_Pos.getIntField("senpos");
+                WordPos wordPos = {n_WordPos, n_SenPos};
+                wordIndexRecord->AddPosInfo(wordPos);
             }
             map_WordIndexRecord[str_DocID] =wordIndexRecord;
         }
@@ -66,8 +69,10 @@ int DocumentDao::InsertIndexOfDocument(const Document* doc)
         mongo::BSONArrayBuilder bb_PosArray;
         for(int j=0; j<record->GetVecPos().size(); j++)
         {
+            WordPos wordPos = record->GetVecPos()[j];
             mongo::BSONObjBuilder bb_pos;
-            bb_pos.append("pos",record->GetVecPos()[j]);
+            bb_pos.append("wordpos",wordPos.wordPos);
+            bb_pos.append("senpos",wordPos.senPos);
             bb_PosArray.append(bb_pos.obj());
         }
         bb_Record.append("poss",bb_PosArray.arr());
@@ -159,6 +164,62 @@ std::string DocumentDao::QuerySIMSimilarity(const Document* doc)
         }
     }
     return str_SimilarDoc;
+}
+
+/**
+    查询句子相似的文档
+*/
+//std::vector<FingerPrintsSimilarDocument> DocumentDao::GetSentenceSimilarDocument(doc)
+void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
+{
+    //对每句话，查询句子范围内相同词语超过20%的句子
+    for(int i=0; i<doc->GetvecParagraph().size(); i++)
+    {
+        Paragraph para = doc->GetvecParagraph()[i];
+        for(int j=0; j<para.vec_Sentences.size(); j++)
+        {
+            Sentence sen = para.vec_Sentences[j];
+            int n_SameWordGate = sen.vec_splitedHits.size() * 0.5;
+            std::map<DOCSENPAIR,int> map_DocSenCount;
+            for(int k=0; k<sen.vec_splitedHits.size(); k++)
+            {
+                std::string str_Word = sen.vec_splitedHits[k].word;
+                std::map<DOC_ID,WordIndexRecord*> map_WordDocIndexRecord = QueryIndexOfWord(str_Word);//单词索引的文档信息
+                for(std::map<DOC_ID,WordIndexRecord*>::iterator it=map_WordDocIndexRecord.begin(); it!=map_WordDocIndexRecord.end(); it++)
+                {
+                    DOC_ID docID = it->first;
+                    WordIndexRecord* record = it->second;
+                    std::set<DOCSENPAIR> set_DocSenPair;
+                    for(int m=0; m<record->GetVecPos().size(); m++) //遍历词语在文档中的位置
+                    {
+                        WordPos wordPos = record->GetVecPos()[m];
+                        DOCSENPAIR pair_DocSen(docID,wordPos.senPos);
+                        if(set_DocSenPair.find(pair_DocSen)==set_DocSenPair.end())
+                        {
+                            map_DocSenCount[pair_DocSen] += 1;
+                            set_DocSenPair.insert(pair_DocSen);
+                        }
+                    }
+                }
+            }
+            //统计文档出现次数，保留大于阈值的文档信息
+            std::vector<DOCSENPAIR> vec_DocSen;
+            for(std::map<DOCSENPAIR,int>::iterator it = map_DocSenCount.begin(); it!=map_DocSenCount.end(); it++)
+            {
+                DOCSENPAIR pair_DocSen = it->first;
+                int n_DocCount = it->second;
+                if(n_DocCount >= n_SameWordGate)
+                {
+                    vec_DocSen.push_back(pair_DocSen);
+                }
+            }
+            //计算含有相同句子的相似度
+            for(int k=0; k<vec_DocSen.size(); k++)
+            {
+                //double d_similarity = CalcSentenceSimilarity();
+            }
+        }
+    }
 }
 
 DocumentDao::~DocumentDao()

@@ -21,7 +21,7 @@ class WordIndex
         std::string GetstrPOS() { return m_strPOS; }
         std::map<DOC_ID,WordIndexRecord*> GetMapDocWordIndex() { return m_mapDocWordIndex; }
 
-        int AddDocPosInfo(const DOC_ID docID, const int pos);
+        int AddDocPosInfo(const DOC_ID docID, const WordPos pos);
 
         void Display();
     protected:

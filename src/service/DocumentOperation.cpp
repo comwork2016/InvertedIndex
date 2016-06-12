@@ -50,11 +50,11 @@ int DocumentOperation::AddDirectoryDocuments(const std::string& str_InputDir)
             continue;
         }
         std::string str_DocPath = str_InputDir + ptr->d_name;
-        Document* doc = new Document(str_DocPath,true);//分句但不分词
+        Document* doc = new Document(str_DocPath,true);//分词
         vec_Documents.push_back(doc);
         num++;
         //一次
-        if(num%1000==0)
+        if(num%50==0)
         {
             num=0;
             //将文档集合添加到数据库中
@@ -65,7 +65,7 @@ int DocumentOperation::AddDirectoryDocuments(const std::string& str_InputDir)
                 delete vec_Documents[i];
             }
             vec_Documents.clear();
-            //break;
+            break;
         }
     }
     //将文档集合添加到数据库中
@@ -104,6 +104,56 @@ int DocumentOperation::InsertDocuments(const std::vector<Document*>& vec_Doc,std
         }
     }
     delete docDao;
+}
+
+int DocumentOperation::SearchLeak(const std::string& str_DocPath)
+{
+    Document* doc = new Document(str_DocPath,true);
+    //与数据库中的文件SimHash比较,如果不相同,再通过文档指纹查询泄露信息
+    DocumentDao* docDao = new DocumentDao();
+    std::string str_SimilarDoc = docDao->QuerySIMSimilarity(doc);
+    if(str_SimilarDoc=="")
+    {
+        //查询相同的指纹
+        docDao->GetSentenceSimilarDocument(doc);
+        /*遍历输出相同指纹*/
+        /*for(int i=0; i<vec_SimilarDocument.size(); i++)
+        {
+            FingerPrintsSimilarDocument similarDoc = vec_SimilarDocument[i];
+            const char* pch_DocPath = doc->GetstrDocPath().c_str();
+            const char* pch_SimDocPath = similarDoc.str_DBDoc.c_str();
+            std::cout<<std::endl<<std::endl<<"*************************************************************************************************"<<std::endl;
+            std::cout<<"similarity between "<<pch_DocPath<<" and "<<pch_SimDocPath<<" is "<<100*similarDoc.f_similarity<<"%"<<std::endl;
+            std::cout<<"*************************************************************************************************"<<std::endl;
+            int n_SameSize = similarDoc.vec_SearchDocSimilarTextRange.size();
+            for(int j=0; j<n_SameSize; j++)
+            {
+                std::cout<<"==============================="<<std::endl;
+                TextRange textrange_SearchDoc = similarDoc.vec_SearchDocSimilarTextRange[j]; //待比对文档中相同的hash
+                TextRange textrange_DBDoc = similarDoc.vec_DBDocSimilarTextRange[j]; //数据库中文档的相同的hash;
+                // 搜索文档的内容和位置
+                int n_OriginLength = textrange_SearchDoc.offset_end - textrange_SearchDoc.offset_begin;
+                std::string str_OriginWord = doc->GetstrContents().substr(textrange_SearchDoc.offset_begin, n_OriginLength);
+                std::cout<<"["<<textrange_SearchDoc.offset_begin<<","<<textrange_SearchDoc.offset_end<<","<<n_OriginLength<<"]"<<std::endl;
+                std::cout<<str_OriginWord<<std::endl<<std::endl;
+                //数据库中文档的内容和位置
+                Document* docDB = new Document(similarDoc.str_DBDoc);// 数据库中的文档信息
+                int n_DBLength = textrange_DBDoc.offset_end - textrange_DBDoc.offset_begin;
+                std::string str_DBWord = docDB->GetstrContents().substr(textrange_DBDoc.offset_begin, n_DBLength);
+                std::cout<<"["<<textrange_DBDoc.offset_begin<<","<<textrange_DBDoc.offset_end<<","<<n_DBLength<<"]"<<std::endl;
+                std::cout<<str_DBWord<<std::endl;
+            }
+        }*/
+    }
+    else
+    {
+        const char* pch_DocName =doc->GetstrDocName().c_str();
+        const char* pch_SimilarDocName =str_SimilarDoc.c_str();
+        std::cout<<"LEAKAGE DOC FOUND: "<<pch_DocName <<" is similar to "<<pch_SimilarDocName<<std::endl;
+    }
+    delete docDao;
+    delete doc;
+    return 0;
 }
 
 DocumentOperation::~DocumentOperation()

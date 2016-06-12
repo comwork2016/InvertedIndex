@@ -9,13 +9,15 @@ WordIndex::WordIndex(const std::string& str_Word, const int n_WordLength, const 
     this->m_strPOS = str_POS;
 }
 
-int WordIndex::AddDocPosInfo(const DOC_ID docID, const int pos)
+int WordIndex::AddDocPosInfo(const DOC_ID docID, const WordPos pos)
 {
     WordIndexRecord* wordIndexRecord;
     if(this->m_mapDocWordIndex.find(docID)==this->m_mapDocWordIndex.end())//包含该单词的第一个文档
     {
-         wordIndexRecord = new WordIndexRecord(docID);
-    }else{
+        wordIndexRecord = new WordIndexRecord(docID);
+    }
+    else
+    {
         wordIndexRecord = this->m_mapDocWordIndex[docID];
     }
     wordIndexRecord->AddPosInfo(pos);
@@ -34,7 +36,7 @@ void WordIndex::Display()
         WordIndexRecord* wordIndexRecord = it->second;
         wordIndexRecord->Display();
     }
-         m_mapDocWordIndex;//<doc_id,posInfo>
+    m_mapDocWordIndex;//<doc_id,posInfo>
 }
 
 WordIndex::~WordIndex()

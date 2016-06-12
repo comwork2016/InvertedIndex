@@ -12,6 +12,7 @@ std::set<std::string> ReadCorpus::set_StopTerm;
 int main()
 {
     //设置全局环境本地化
+    std::locale::global(std::locale(""));
     struct timeval start,finish;
     double duration;
     gettimeofday(&start,NULL);
@@ -21,7 +22,11 @@ int main()
 
     //DocumentOperation::AddDocument("./in/utf_23.txt");
     std::string str_InputDir = "./in/";
-    DocumentOperation::AddDirectoryDocuments(str_InputDir);
+    //DocumentOperation::AddDirectoryDocuments(str_InputDir);
+
+    //查询数据泄露
+    std::string str_LeakDoc = "./test/leak.txt";
+    DocumentOperation::SearchLeak(str_LeakDoc);
 
     gettimeofday(&finish,NULL);
     duration = 1000000 * (finish.tv_sec - start.tv_sec) + finish.tv_usec - start.tv_usec;

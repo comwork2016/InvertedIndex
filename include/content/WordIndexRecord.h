@@ -19,17 +19,17 @@ class WordIndexRecord
 
         int GetnTermFrequency() {return m_nTermFrequency; }
 
-        std::vector<int> GetVecPos() { return m_vecPos; }
+        std::vector<WordPos> GetVecPos() { return m_vecPos; }
 
 
-        int AddPosInfo(const int pos);
+        int AddPosInfo(const WordPos pos);
 
         void Display();
     protected:
     private:
         DOC_ID m_DocID;
         int m_nTermFrequency;
-        std::vector<int> m_vecPos;//位置信息
+        std::vector<WordPos> m_vecPos;//位置信息
 };
 
 #endif // WORDINDEXRECORD_H

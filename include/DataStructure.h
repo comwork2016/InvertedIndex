@@ -7,6 +7,7 @@
 typedef std::string DOC_ID;
 //typedef std::string WORD_ID;
 typedef long long SIMHASH_TYPE;
+typedef std::pair<DOC_ID,int> DOCSENPAIR;//存储词频信息
 
 
 const int HAMMINGDIST = 3;
@@ -47,6 +48,13 @@ struct Paragraph
 {
     TextRange textRange; //段落范围
     std::vector<Sentence> vec_Sentences; //段落包含的分词信息
+};
+
+//定义结构体，存储单词在文章中的位置信息
+struct WordPos
+{
+    int wordPos;
+    int senPos;
 };
 
 #endif // CONSTANTS_H_INCLUDED

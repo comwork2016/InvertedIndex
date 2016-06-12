@@ -11,9 +11,9 @@ Document::Document(const std::string& str_DocPath, bool b_Split)
     this->m_lSimHash = 0;
     //this->m_nWordCount = 0;
     this->m_bSplit = b_Split;
+    std::cout<<"Reading document "<<this->m_strDocName<<std::endl;
     if(b_Split)
     {
-        std::cout<<"Reading document "<<this->m_strDocName<<std::endl;
         //读取文档内容
         int n_ReadStats = ReadDocumentAndSplitToSentence();
         if(n_ReadStats == ERROR_OPENFILE)
@@ -182,9 +182,9 @@ void Document::SplitTermAndCalcTF(Sentence& sen)
         {
             continue;
         }
-        //筛选词性名词(N)、动词(V)、形容词 (A)、数词(M)、量词(Q)、代词(R)和时间(T)
+        //筛选词性名词(N)、动词(V)、形容词 (A)、数词(M)、量词(Q)和时间(T)
         char ch_pos = pVecResult[i].sPOS[0];
-        if(ch_pos == 'n' || ch_pos == 'v' || ch_pos == 'n' || ch_pos == 'a' || ch_pos == 'm' || ch_pos == 'q' || ch_pos == 'r' || ch_pos == 't')
+        if((ch_pos == 'n' || ch_pos == 'v' || ch_pos == 'n' || ch_pos == 'a' || ch_pos == 'm' || ch_pos == 'q' || ch_pos == 't') && StringUtil::ConvertCharArraytoWString(str_HitsWord).length()>1)
         {
             //SIMHASH_TYPE simhash = HashUtil::CalcStringHash(str_HitsWord);
             SplitedHits sh_hits =
@@ -238,6 +238,8 @@ void Document::CalcDocSimHash()
     this->m_lSimHash16_2  = this->m_lSimHash & 0xFFFF00000000;
     this->m_lSimHash16_3  = this->m_lSimHash & 0xFFFF0000;
     this->m_lSimHash16_4  = this->m_lSimHash & 0xFFFF;
+    //std::cout<<this->m_lSimHash<<std::endl;
+    //std::cin.get();
 }
 
 /**
@@ -263,7 +265,8 @@ void Document::BuildInvertedIndex()
                 {
                     wordsIndex = this->m_mapWordIndex[sh.word];
                 }
-                wordsIndex->AddDocPosInfo(this->m_strDocPath,sh.textRange.offset);
+                WordPos wordPos = {sh.textRange.offset,sen.textRange.offset};
+                wordsIndex->AddDocPosInfo(this->m_strDocPath,wordPos);
                 this->m_mapWordIndex[sh.word] = wordsIndex;
             }
         }
@@ -273,20 +276,19 @@ void Document::BuildInvertedIndex()
 /**
     输出文件的信息
 */
-void Document::Display()
+void Document::Display() const
 {
     std::cout<<this->m_strDocName<<std::endl;
-
     //输出文章内容
     std::cout<<this->m_strContents<<std::endl;
     //输出段落句子的信息
     for(int i=0; i<this->m_vecParagraph.size(); i++)
     {
-        Paragraph& para = m_vecParagraph[i];
+        Paragraph para = m_vecParagraph[i];
         //对句子进行分词并计算simhash
         for(int j = 0; j<para.vec_Sentences.size(); j++)
         {
-            Sentence& sen = para.vec_Sentences[j];
+            Sentence sen = para.vec_Sentences[j];
             std::string str_sentence = this->m_strContents.substr(sen.textRange.offset,sen.textRange.length);
             std::cout<<"Para "<<i<<" Sentence "<<j<<":["<<sen.textRange.offset<<","<<sen.textRange.length<<"]"<<std::endl;
             std::cout<<str_sentence<<std::endl<<std::endl;
@@ -299,13 +301,13 @@ void Document::Display()
             std::cout<<std::endl<<std::endl;
         }
     }
-    /*查看倒排索引信息*/
+    /*查看倒排索引信息
     for(std::map<std::string,WordIndex*>::iterator it = this->m_mapWordIndex.begin(); it != this->m_mapWordIndex.end(); it++)
     {
         WordIndex* wordIndex = it->second;
         wordIndex->Display();
         std::cout<<std::endl;
-    }
+    }*/
     std::cout<<this->m_lSimHash<<std::endl;
 }
 

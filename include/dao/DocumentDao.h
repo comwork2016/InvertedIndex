@@ -14,6 +14,7 @@ class DocumentDao
         int InsertDocument(const Document* doc);
         int DeleteAll();
         std::string QuerySIMSimilarity(const Document* doc);
+        void GetSentenceSimilarDocument(const Document* doc);
 
     protected:
         std::map<DOC_ID,WordIndexRecord*> QueryIndexOfWord(const std::string& str_Word);

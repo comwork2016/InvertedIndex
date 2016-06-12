@@ -11,7 +11,7 @@ WordIndexRecord::WordIndexRecord(const DOC_ID docId)
 /**
     添加位置信息
 */
-int WordIndexRecord::AddPosInfo(const int pos)
+int WordIndexRecord::AddPosInfo(const WordPos pos)
 {
     this->m_vecPos.push_back(pos);
     this->m_nTermFrequency++;
@@ -25,7 +25,7 @@ void WordIndexRecord::Display()
     std::cout<<"{"<<this->m_DocID<<", "<<this->m_nTermFrequency<<", (";
     for(int i=0;i<this->m_vecPos.size();i++)
     {
-        std::cout<<this->m_vecPos[i]<<",";
+        std::cout<<this->m_vecPos[i].wordPos<<",";
     }
     std::cout<<")}";
 }

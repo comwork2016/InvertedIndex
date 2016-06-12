@@ -33,11 +33,13 @@ class Document
         SIMHASH_TYPE GetlSimHash16_3() const { return m_lSimHash16_3; }
         SIMHASH_TYPE GetlSimHash16_4() const { return m_lSimHash16_4; }
 
+        std::vector<Paragraph> GetvecParagraph() const { return m_vecParagraph; }
+
         std::map<std::string, WordIndex*> GetMapWordIndex() const { return m_mapWordIndex; }
 
         void BuildInvertedIndex();
 
-        void Display();
+        void Display() const;
 
     protected:
         int ReadDocumentContent();

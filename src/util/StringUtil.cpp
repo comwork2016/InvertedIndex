@@ -10,8 +10,12 @@ StringUtil::StringUtil()
 */
 std::string StringUtil::Trim(std::string& str)
 {
+    //英文
     str.erase(0,str.find_first_not_of(" \t\r\n"));
     str.erase(str.find_last_not_of(" \t\r\n") + 1);
+    //中文
+    str.erase(0,str.find_first_not_of("　"));
+    str.erase(str.find_last_not_of("　") + 1);
     return str;
 }
 
@@ -34,10 +38,6 @@ std::wstring StringUtil::ConvertCharArraytoWString(const std::string& str)
 */
 bool StringUtil::isStringBlank(std::string str)
 {
-    if(str == "　")//中文空格
-    {
-        return true;
-    }
     str = Trim(str);
     for(int i=0; i<str.length(); i++)
     {
