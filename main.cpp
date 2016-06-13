@@ -6,6 +6,9 @@
 #include "DocumentOperation.h"
 #include "GlossaryDao.h"
 
+//to delete
+#include "SentenceSimilarity.h"
+
 //静态变量的初始化
 std::map<std::string,double> ReadCorpus::map_CorpusTF;
 std::set<std::string> ReadCorpus::set_StopTerm;
@@ -25,7 +28,7 @@ int main()
 
     //读取语料库中的词频信息
     //ReadCorpus::ReadCorpusTF("./Corpus/Corpus.csv");
-    //ReadCorpus::ReadStopTerm("./Corpus/StopTerm.txt");
+    ReadCorpus::ReadStopTerm("./Corpus/StopTerm.txt");
 
     //DocumentOperation::AddDocument("./in/utf_23.txt");
     std::string str_InputDir = "./in/";
@@ -33,10 +36,14 @@ int main()
 
     //查询数据泄露
     std::string str_LeakDoc = "./test/leak.txt";
-    DocumentOperation::SearchLeak(str_LeakDoc);
+    //DocumentOperation::SearchLeak(str_LeakDoc);
 
     //Document* doc = new Document("./in/utf_742.txt",true);
     //doc->Display();
+
+    std::string str1 = "“龙眼”无人机是由美国海军陆战队士兵在阿富汗地区发射";
+    std::string str2 = "海军陆战队战士在阿富汗山地发射“龙眼”无人机";
+    std::cout<<SentenceSimilarity::CalcSentenceSimilarity(str1,str2)<<std::endl;
 
     gettimeofday(&finish,NULL);
     duration = 1000000 * (finish.tv_sec - start.tv_sec) + finish.tv_usec - start.tv_usec;

@@ -5,6 +5,8 @@
 #include "../content/Document.h"
 #include "../content/WordIndexRecord.h"
 
+#include "SentenceSimilarity.h"
+
 class DocumentDao
 {
     public:

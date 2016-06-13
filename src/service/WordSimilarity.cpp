@@ -31,6 +31,10 @@ void WordSimilarity::InitSemVec(const std::string str_filename)
 */
 double WordSimilarity::CalcWordSimilarity(const std::string str_word1,const std::string str_word2)
 {
+    if(str_word1 == str_word2)
+    {
+        return 1.0;
+    }
     double d_similarity=0.0;
     std::vector<std::string> vec1,vec2;     //两个词语的概念分别存放在vec1和vec2中
     vec1 = dao->SelectSememe(str_word1);
@@ -39,11 +43,11 @@ double WordSimilarity::CalcWordSimilarity(const std::string str_word1,const std:
     int len2=vec2.size();
     if(len1==0)
     {
-        std::cout<<"word1 not in dict"<<std::endl;
+        std::cout<<"word1 "<<str_word1<<" not in dict"<<std::endl;
     }
     if(len2==0)
     {
-        std::cout<<"word2 not in dict"<<std::endl;
+        std::cout<<"word2 "<<str_word2<<" not in dict"<<std::endl;
     }
     //每个概念之间进行相似性计算，最大相似度作为词语的相似度
     for(int i=0; i<len1; ++i)
@@ -57,6 +61,7 @@ double WordSimilarity::CalcWordSimilarity(const std::string str_word1,const std:
             }
         }
     }
+    //std::cout<<str_word1<<"\t"<<str_word2<<"\t"<<d_similarity<<std::endl;
     return d_similarity;
 }
 
@@ -179,7 +184,7 @@ double WordSimilarity::CalConceptSim(const std::string str_concept1,const std::s
                 pos21=pos22+1;
             }
             //4部分的加权和作为整体的相似度
-            std::cout<<sim1<<"\t"<<sim2<<"\t"<<sim3<<"\t"<<sim4<<std::endl;
+            //std::cout<<sim1<<"\t"<<sim2<<"\t"<<sim3<<"\t"<<sim4<<std::endl;
             return beta1*sim1+
                    beta2*sim1*sim2+
                    beta3*sim1*sim2*sim3+
@@ -277,7 +282,7 @@ double WordSimilarity::CalSimBase(const std::string str_sem1,const std::string s
 */
 double WordSimilarity::CalSimReal(std::string str_sem1,std::string str_sem2)
 {
-    std::cout<<"将要计算关系义原["<<str_sem1<<"]和["<<str_sem2<<"]的相似度"<<std::endl;
+    //std::cout<<"将要计算关系义原["<<str_sem1<<"]和["<<str_sem2<<"]的相似度"<<std::endl;
     //如果整体是括在小括号里的，先把小括号去掉
     if(str_sem1[0]==40)
     {
@@ -305,7 +310,7 @@ double WordSimilarity::CalSim1(const std::string str_line1, const std::string st
     {
         return delta;
     }
-    std::cout<<"将要计算第一独立义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
+    //std::cout<<"将要计算第一独立义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
     return CalSimBase(str_line1,str_line2);
 }
 
@@ -322,7 +327,7 @@ double WordSimilarity::CalSim2(const std::string str_line1,const std::string str
     {
         return 0;
     }
-    std::cout<<"将要计算其他独立义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
+    //std::cout<<"将要计算其他独立义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
     std::vector<double> vec_maxsim;
     std::vector<std::string> vec1,vec2;
     vec1 = StringUtil::SplitString(str_line1,",");
@@ -394,7 +399,7 @@ double WordSimilarity::CalSim3(const std::string str_line1,const std::string str
     {
         return 0;
     }
-    std::cout<<"将要计算关系义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
+    //std::cout<<"将要计算关系义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
     std::vector<double> vec_sim;
     std::vector<std::string> vec1,vec2;
     //可能有多个关系义原描述式
@@ -453,7 +458,7 @@ double WordSimilarity::CalSim4(const std::string str_line1,const std::string str
     {
         return 0;
     }
-    std::cout<<"将要计算符号义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
+    //std::cout<<"将要计算符号义原描述式["<<str_line1<<"]和["<<str_line2<<"]的相似度"<<std::endl;
     std::vector<double> vec_sim;
     std::vector<std::string> vec1,vec2;
     vec1 = StringUtil::SplitString(str_line1,",");
