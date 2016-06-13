@@ -50,6 +50,25 @@ void ReadCorpus::ReadStopTerm(const std::string& str_Path)
     std::cout<<"Reading stop words done!"<<std::endl;
 }
 
+/**
+    把基本义原从文件读入vector
+*/
+void ReadCorpus::ReadSememe(const std::string str_filename)
+{
+    std::ifstream ifs(str_filename.c_str());
+    std::string str_line;
+    while(getline(ifs,str_line))
+    {
+        std::istringstream iss(str_line);
+        int index,pind;
+        std::string str_sememe;
+        iss>>index>>str_sememe>>pind;
+        Sememe sem(index,str_sememe,pind);
+        vec_Sememe.push_back(sem);
+    }
+    ifs.close();
+}
+
 ReadCorpus::~ReadCorpus()
 {
     //dtor

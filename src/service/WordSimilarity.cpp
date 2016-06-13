@@ -2,52 +2,23 @@
 
 WordSimilarity::WordSimilarity()
 {
-    //ctor
-    InitSemVec("dat/whole.dat");
-    dao = new GlossaryDao();
-}
-
-/**
-    把基本义原从文件读入vector
-*/
-void WordSimilarity::InitSemVec(const std::string str_filename)
-{
-    std::ifstream ifs(str_filename.c_str());
-    std::string str_line;
-    while(getline(ifs,str_line))
-    {
-        std::istringstream iss(str_line);
-        int index,pind;
-        std::string str_sememe;
-        iss>>index>>str_sememe>>pind;
-        Sememe sem(index,str_sememe,pind);
-        vec_Sememe.push_back(sem);
-    }
-    ifs.close();
 }
 
 /**
     计算词语之间的相似度
 */
-double WordSimilarity::CalcWordSimilarity(const std::string str_word1,const std::string str_word2)
+double WordSimilarity::CalcWordSimilarityByConcepts(const std::vector<std::string> vec1,const std::vector<std::string> vec2)
 {
-    if(str_word1 == str_word2)
-    {
-        return 1.0;
-    }
     double d_similarity=0.0;
-    std::vector<std::string> vec1,vec2;     //两个词语的概念分别存放在vec1和vec2中
-    vec1 = dao->SelectSememe(str_word1);
-    vec2 = dao->SelectSememe(str_word2);
     int len1=vec1.size();
     int len2=vec2.size();
     if(len1==0)
     {
-        std::cout<<"word1 "<<str_word1<<" not in dict"<<std::endl;
+        return 0;
     }
     if(len2==0)
     {
-        std::cout<<"word2 "<<str_word2<<" not in dict"<<std::endl;
+        return 0;
     }
     //每个概念之间进行相似性计算，最大相似度作为词语的相似度
     for(int i=0; i<len1; ++i)
@@ -199,6 +170,11 @@ double WordSimilarity::CalConceptSim(const std::string str_concept1,const std::s
 */
 double WordSimilarity::CalSimBase(const std::string str_sem1,const std::string str_sem2)
 {
+    //两个义原相等
+    if(str_sem1==str_sem2)
+    {
+        return 1;
+    }
     if(str_sem1[0]==40 ^ str_sem2[0]==40) //有一个是具体词，而另一个不是
     {
         return 0;
@@ -210,22 +186,17 @@ double WordSimilarity::CalSimBase(const std::string str_sem1,const std::string s
             return 0;
         }
     }
-    //两个义原相等
-    if(str_sem1==str_sem2)
-    {
-        return 1;
-    }
     Sememe sem1(0,str_sem1,0);
     Sememe sem2(0,str_sem2,0);
-    std::vector<Sememe>::iterator it1=find(vec_Sememe.begin(),vec_Sememe.end(),sem1);
-    if(it1==vec_Sememe.end())
+    std::vector<Sememe>::iterator it1=std::find(ReadCorpus::vec_Sememe.begin(),ReadCorpus::vec_Sememe.end(),sem1);
+    if(it1==ReadCorpus::vec_Sememe.end())
     {
         //不在词典中
         //std::cout<<"["<<str_sem1<<"]不在词典中"<<std::endl;
         return 0;
     }
-    std::vector<Sememe>::iterator it2=find(vec_Sememe.begin(),vec_Sememe.end(),sem2);
-    if(it2==vec_Sememe.end())
+    std::vector<Sememe>::iterator it2=std::find(ReadCorpus::vec_Sememe.begin(),ReadCorpus::vec_Sememe.end(),sem2);
+    if(it2==ReadCorpus::vec_Sememe.end())
     {
         //不在词典中
         //std::cout<<"["<<str_sem2<<"]不在词典中"<<std::endl;
@@ -238,9 +209,9 @@ double WordSimilarity::CalSimBase(const std::string str_sem1,const std::string s
     int parent1=it1->GetnParent();
     while(child1!=parent1)
     {
-        stk1.push(vec_Sememe[parent1].GetstrSememe());
+        stk1.push(ReadCorpus::vec_Sememe[parent1].GetstrSememe());
         child1=parent1;
-        parent1=vec_Sememe[parent1].GetnParent();
+        parent1=ReadCorpus::vec_Sememe[parent1].GetnParent();
     }
     //把sem2的路径压入栈中
     stk2.push(str_sem2);
@@ -248,9 +219,9 @@ double WordSimilarity::CalSimBase(const std::string str_sem1,const std::string s
     int parent2=it2->GetnParent();
     while(child2!=parent2)
     {
-        stk2.push(vec_Sememe[parent2].GetstrSememe());
+        stk2.push(ReadCorpus::vec_Sememe[parent2].GetstrSememe());
         child2=parent2;
-        parent2=vec_Sememe[parent2].GetnParent();
+        parent2=ReadCorpus::vec_Sememe[parent2].GetnParent();
     }
     if(stk1.top()!=stk2.top())
     {
@@ -500,7 +471,4 @@ double WordSimilarity::CalSim4(const std::string str_line1,const std::string str
 
 WordSimilarity::~WordSimilarity()
 {
-    //dtor
-    this->vec_Sememe.clear();
-    delete dao;
 }

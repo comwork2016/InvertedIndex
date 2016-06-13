@@ -5,13 +5,13 @@
 #include "ReadCorpus.h"
 #include "DocumentOperation.h"
 #include "GlossaryDao.h"
-
 //to delete
 #include "SentenceSimilarity.h"
 
 //静态变量的初始化
 std::map<std::string,double> ReadCorpus::map_CorpusTF;
 std::set<std::string> ReadCorpus::set_StopTerm;
+std::vector<Sememe> ReadCorpus::vec_Sememe;
 
 int main()
 {
@@ -29,6 +29,7 @@ int main()
     //读取语料库中的词频信息
     //ReadCorpus::ReadCorpusTF("./Corpus/Corpus.csv");
     ReadCorpus::ReadStopTerm("./Corpus/StopTerm.txt");
+    ReadCorpus::ReadSememe("./dat/whole.dat");
 
     //DocumentOperation::AddDocument("./in/utf_23.txt");
     std::string str_InputDir = "./in/";
@@ -42,7 +43,7 @@ int main()
     //doc->Display();
 
     std::string str1 = "“龙眼”无人机是由美国海军陆战队士兵在阿富汗地区发射";
-    std::string str2 = "海军陆战队战士在阿富汗山地发射“龙眼”无人机";
+    std::string str2 = "海军陆战队战士在阿富汗山区发射“龙眼”无人机";
     std::cout<<SentenceSimilarity::CalcSentenceSimilarity(str1,str2)<<std::endl;
 
     gettimeofday(&finish,NULL);

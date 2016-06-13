@@ -20,46 +20,67 @@ double SentenceSimilarity::CalcSentenceSimilarity(const std::string str_Sen1,con
     {
         std::cout<<"ICTCLAS INIT FAILED!"<<std::endl;
     }
-    std::vector<std::string> vec_NWord1, vec_VWord1, vec_AWord1, vec_MWord1, vec_QWord1, vec_TWord1;
-    std::vector<std::string> vec_NWord2, vec_VWord2, vec_AWord2, vec_MWord2, vec_QWord2, vec_TWord2;
-    SplitSentenceToVectors(str_Sen1,vec_NWord1, vec_VWord1, vec_AWord1, vec_MWord1, vec_QWord1, vec_TWord1);
-    SplitSentenceToVectors(str_Sen2,vec_NWord2, vec_VWord2, vec_AWord2, vec_MWord2, vec_QWord2, vec_TWord2);
+    std::vector<std::string> vec_Word1,vec_NWord1, vec_VWord1, vec_AWord1, vec_MWord1, vec_QWord1, vec_TWord1;
+    std::vector<std::string> vec_Word2,vec_NWord2, vec_VWord2, vec_AWord2, vec_MWord2, vec_QWord2, vec_TWord2;
+    SplitSentenceToVectors(str_Sen1,vec_Word1,vec_NWord1, vec_VWord1, vec_AWord1, vec_MWord1, vec_QWord1, vec_TWord1);
+    SplitSentenceToVectors(str_Sen2,vec_Word2,vec_NWord2, vec_VWord2, vec_AWord2, vec_MWord2, vec_QWord2, vec_TWord2);
+    //便利所有词语，提取词语概念
+    GlossaryDao* glossaryDao = new GlossaryDao();
+    std::map<std::string,std::vector<std::string> > map_WordConceptsVector;
+    for(int i=0; i<vec_Word1.size(); i++)
+    {
+        std::string str_Word = vec_Word1[i];
+        if(map_WordConceptsVector.find(str_Word) == map_WordConceptsVector.end())
+        {
+            std::vector<std::string> vec1 = glossaryDao->SelectSememe(str_Word);
+            map_WordConceptsVector[str_Word] = vec1;
+        }
+    }
+    for(int i=0; i<vec_Word2.size(); i++)
+    {
+        std::string str_Word = vec_Word2[i];
+        if(map_WordConceptsVector.find(str_Word) == map_WordConceptsVector.end())
+        {
+            std::vector<std::string> vec2 = glossaryDao->SelectSememe(str_Word);
+            map_WordConceptsVector[str_Word] = vec2;
+        }
+    }
     //分别计算各种词性的相似度
     int n_num = 0;
     double d_N = 0;
     if(!vec_NWord1.empty() || !vec_NWord2.empty())
     {
-        d_N = CalcVectorSimilarity(vec_NWord1,vec_NWord2);
+        d_N = CalcVectorSimilarity(vec_NWord1,vec_NWord2,map_WordConceptsVector);
         n_num++;
     }
     double d_V = 0;
     if(!vec_VWord1.empty() || !vec_VWord2.empty())
     {
-        d_V = CalcVectorSimilarity(vec_VWord1,vec_VWord2);
+        d_V = CalcVectorSimilarity(vec_VWord1,vec_VWord2,map_WordConceptsVector);
         n_num++;
     }
     double d_A = 0;
     if(!vec_AWord1.empty() || !vec_AWord2.empty())
     {
-        d_A = CalcVectorSimilarity(vec_AWord1,vec_AWord2);
+        d_A = CalcVectorSimilarity(vec_AWord1,vec_AWord2,map_WordConceptsVector);
         n_num++;
     }
     double d_M = 0;
     if(!vec_MWord1.empty() || !vec_MWord2.empty())
     {
-        d_M = CalcVectorSimilarity(vec_MWord1,vec_MWord2);
+        d_M = CalcVectorSimilarity(vec_MWord1,vec_MWord2,map_WordConceptsVector);
         n_num++;
     }
     double d_Q = 0;
     if(!vec_QWord1.empty() || !vec_QWord2.empty())
     {
-        d_Q = CalcVectorSimilarity(vec_QWord1,vec_QWord2);
+        d_Q = CalcVectorSimilarity(vec_QWord1,vec_QWord2,map_WordConceptsVector);
         n_num++;
     }
     double d_T = 0;
     if(!vec_TWord1.empty() || !vec_TWord2.empty())
     {
-        d_T = CalcVectorSimilarity(vec_TWord1,vec_TWord2);
+        d_T = CalcVectorSimilarity(vec_TWord1,vec_TWord2,map_WordConceptsVector);
         n_num++;
     }
     if(n_num == 0)
@@ -73,9 +94,8 @@ double SentenceSimilarity::CalcSentenceSimilarity(const std::string str_Sen1,con
 /**
     计算两个集合中词语的平均相似度
 */
-double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,std::vector<std::string>& vec2)
+double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,std::vector<std::string>& vec2,std::map<std::string,std::vector<std::string> > map_WordConceptsVector)
 {
-    WordSimilarity* wordSimilarity = new WordSimilarity();
     std::vector<double> vec_maxsim;
     int len1=vec1.size();
     int len2=vec2.size();
@@ -96,7 +116,31 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
     {
         for(int j=0; j<len2; j++)
         {
-            matrix[i][j] = wordSimilarity->CalcWordSimilarity(vec1[i],vec2[j]);
+            if(vec1[i] == vec2[j])
+            {
+                matrix[i][j] = 1;
+            }
+            else
+            {
+                std::vector<std::string> vec_concept1 = map_WordConceptsVector[vec1[i]];
+                if(len1==0)
+                {
+                    std::cout<<"word1 "<<vec1[i]<<" not in dict"<<std::endl;
+                    matrix[i][j] = 0;
+                }
+                else
+                {
+                    std::vector<std::string> vec_concept2 = map_WordConceptsVector[vec2[j]];
+                    if(len2==0)
+                    {
+                        std::cout<<"word2 "<<vec2[j]<<" not in dict"<<std::endl;
+                        matrix[i][j] = 0;
+                    }else
+                    {
+                        matrix[i][j] = WordSimilarity::CalcWordSimilarityByConcepts(vec_concept1,vec_concept2);
+                    }
+                }
+            }
         }
     }
     //查找矩阵中最大相似度最大的词语对，加入相似度向量中
@@ -118,11 +162,11 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
             }
         }
         //从向量中删除以计算的词语
-        for(int i=0;i<len1;i++)//列向置为-1
+        for(int i=0; i<len1; i++) //列向置为-1
         {
             matrix[i][n] = -1;
         }
-        for(int i=0;i<len2;i++)
+        for(int i=0; i<len2; i++)
         {
             matrix[m][i] = -1;
         }
@@ -148,13 +192,19 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
         sum+=*it;
         it++;
     }
+    //释放matrix矩阵资源
+    for(int i=0; i<len1; i++)
+    {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
     return sum/vec_maxsim.size();
 }
 
 /**
     将句子分词并存放到不同词性的向量中
 */
-void SentenceSimilarity::SplitSentenceToVectors(const std::string& str,std::vector<std::string>& vec_NWord,std::vector<std::string>& vec_VWord,std::vector<std::string>& vec_AWord,std::vector<std::string>& vec_MWord,std::vector<std::string>& vec_QWord,std::vector<std::string>& vec_TWord)
+void SentenceSimilarity::SplitSentenceToVectors(const std::string& str,std::vector<std::string>& vec_Word,std::vector<std::string>& vec_NWord,std::vector<std::string>& vec_VWord,std::vector<std::string>& vec_AWord,std::vector<std::string>& vec_MWord,std::vector<std::string>& vec_QWord,std::vector<std::string>& vec_TWord)
 {
     const result_t *pVecResult;
     int nCount = 0;
@@ -173,21 +223,27 @@ void SentenceSimilarity::SplitSentenceToVectors(const std::string& str,std::vect
             switch(ch_pos)
             {
             case 'n':
+                vec_Word.push_back(str_HitsWord);
                 vec_NWord.push_back(str_HitsWord);
                 break;
             case 'v':
+                vec_Word.push_back(str_HitsWord);
                 vec_VWord.push_back(str_HitsWord);
                 break;
             case 'a':
+                vec_Word.push_back(str_HitsWord);
                 vec_VWord.push_back(str_HitsWord);
                 break;
             case 'm':
+                vec_Word.push_back(str_HitsWord);
                 vec_VWord.push_back(str_HitsWord);
                 break;
             case 'q':
+                vec_Word.push_back(str_HitsWord);
                 vec_VWord.push_back(str_HitsWord);
                 break;
             case 't':
+                vec_Word.push_back(str_HitsWord);
                 vec_VWord.push_back(str_HitsWord);
                 break;
             default:
