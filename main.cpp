@@ -37,14 +37,17 @@ int main()
 
     //查询数据泄露
     std::string str_LeakDoc = "./test/leak.txt";
-    //DocumentOperation::SearchLeak(str_LeakDoc);
+    DocumentOperation::SearchLeak(str_LeakDoc);
 
     //Document* doc = new Document("./in/utf_742.txt",true);
     //doc->Display();
 
-    std::string str1 = "“龙眼”无人机是由美国海军陆战队士兵在阿富汗地区发射";
+    /*std::string str1 = "“龙眼”无人机是由美国海军陆战队士兵在阿富汗地区发射";
     std::string str2 = "海军陆战队战士在阿富汗山区发射“龙眼”无人机";
-    std::cout<<SentenceSimilarity::CalcSentenceSimilarity(str1,str2)<<std::endl;
+    //相似度为0.48
+    std::string str1 = "这颗树有3米高";
+    std::string str2 = "那个石头有2千克重";
+    std::cout<<SentenceSimilarity::CalcSentenceSimilarity(str1,str2)<<std::endl;*/
 
     gettimeofday(&finish,NULL);
     duration = 1000000 * (finish.tv_sec - start.tv_sec) + finish.tv_usec - start.tv_usec;

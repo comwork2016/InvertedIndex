@@ -7,13 +7,20 @@
 typedef std::string DOC_ID;
 //typedef std::string WORD_ID;
 typedef long long SIMHASH_TYPE;
-typedef std::pair<DOC_ID,int> DOCSENPAIR;//存储词频信息
 
+struct Range
+{
+    int begin;
+    int end;
+};
+
+typedef std::pair<Range,int> DOCRANGETIMES;//存储文档中词语的位置范围信息
 
 const int HAMMINGDIST = 3;
 const int SIMHASHBITS = 64;
 
 const int KGRAM = 6;
+const int SIMILARRANGE = 3;
 const int SIMHASHKGRAM = 2;
 const int BASE = 12;
 const SIMHASH_TYPE MODNUM = (((unsigned SIMHASH_TYPE)1 << (SIMHASHBITS-1))- 1)/BASE/2; //不能取太大的值，否则在计算KRHash时会发生溢出，导致结果不准确
@@ -29,6 +36,13 @@ const static double beta2=0.2;
 const static double beta3=0.17;
 const static double beta4=0.13;
 
+const static double weight_n=0.3; //6种词语相似性权重
+const static double weight_v=0.2;
+const static double weight_a=0.2;
+const static double weight_q=0.1;
+const static double weight_m=0.1;
+const static double weight_t=0.1;
+
 //定义结构体，文档某一段之间的内容
 struct TextRange
 {
@@ -42,6 +56,7 @@ struct SplitedHits
     std::string word;//存储词语信息
     TextRange textRange;//词语的偏移位置信息
     std::string POS;//词语的词性
+    int NoInDoc;//文章中的第几个词语
     SIMHASH_TYPE hashValue;//词语的hash值
 };
 
@@ -70,7 +85,7 @@ struct Paragraph
 struct WordPos
 {
     int wordPos;
-    int senPos;
+    int NoInDoc;
 };
 
 #endif // CONSTANTS_H_INCLUDED

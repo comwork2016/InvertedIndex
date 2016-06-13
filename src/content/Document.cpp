@@ -9,7 +9,7 @@ Document::Document(const std::string& str_DocPath, bool b_Split,bool b_LeakDoc)
     this->m_strDocName = str_DocPath.substr(n_SeparatorIndex+1);
     this->m_strContents = "";
     this->m_lSimHash = 0;
-    //this->m_nWordCount = 0;
+    this->m_nWordCount = 0;
     this->m_bSplit = b_Split;
     std::cout<<"Reading document "<<this->m_strDocName<<std::endl;
     if(b_Split)
@@ -190,15 +190,20 @@ void Document::SplitTermAndCalcTF(Sentence& sen)
         if((ch_pos == 'n' || ch_pos == 'v' || ch_pos == 'n' || ch_pos == 'a' || ch_pos == 'm' || ch_pos == 'q' || ch_pos == 't') && StringUtil::ConvertCharArraytoWString(str_HitsWord).length()>1)
         {
             //SIMHASH_TYPE simhash = HashUtil::CalcStringHash(str_HitsWord);
+            TextRange textRange =
+            {
+                sen.textRange.offset + pVecResult[i].start,//偏移值为最后一个字符的下一个字符所在的位置
+                pVecResult[i].length
+            };
             SplitedHits sh_hits =
             {
                 str_HitsWord,
-                sen.textRange.offset + pVecResult[i].start,//偏移值为最后一个字符的下一个字符所在的位置
-                pVecResult[i].length,
-                pVecResult[i].sPOS
+                textRange,
+                pVecResult[i].sPOS,
+                this->m_nWordCount
             };
             sen.vec_splitedHits.push_back(sh_hits);
-            //this->m_nWordCount++;
+            this->m_nWordCount++;
             //this->m_mapTF[str_HitsWord] += 1;
         }
     }
@@ -268,7 +273,7 @@ void Document::BuildInvertedIndex()
                 {
                     wordsIndex = this->m_mapWordIndex[sh.word];
                 }
-                WordPos wordPos = {sh.textRange.offset,sen.textRange.offset};
+                WordPos wordPos = {sh.textRange.offset,sh.NoInDoc};
                 wordsIndex->AddDocPosInfo(this->m_strDocPath,wordPos);
                 this->m_mapWordIndex[sh.word] = wordsIndex;
             }

@@ -46,49 +46,45 @@ double SentenceSimilarity::CalcSentenceSimilarity(const std::string str_Sen1,con
         }
     }
     //分别计算各种词性的相似度
-    int n_num = 0;
+    double weight_all = 0;
     double d_N = 0;
     if(!vec_NWord1.empty() || !vec_NWord2.empty())
     {
         d_N = CalcVectorSimilarity(vec_NWord1,vec_NWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_n;
     }
     double d_V = 0;
     if(!vec_VWord1.empty() || !vec_VWord2.empty())
     {
         d_V = CalcVectorSimilarity(vec_VWord1,vec_VWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_v;
     }
     double d_A = 0;
     if(!vec_AWord1.empty() || !vec_AWord2.empty())
     {
         d_A = CalcVectorSimilarity(vec_AWord1,vec_AWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_a;
     }
     double d_M = 0;
     if(!vec_MWord1.empty() || !vec_MWord2.empty())
     {
         d_M = CalcVectorSimilarity(vec_MWord1,vec_MWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_m;
     }
     double d_Q = 0;
     if(!vec_QWord1.empty() || !vec_QWord2.empty())
     {
         d_Q = CalcVectorSimilarity(vec_QWord1,vec_QWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_q;
     }
     double d_T = 0;
     if(!vec_TWord1.empty() || !vec_TWord2.empty())
     {
         d_T = CalcVectorSimilarity(vec_TWord1,vec_TWord2,map_WordConceptsVector);
-        n_num++;
+        weight_all += weight_t;
     }
-    if(n_num == 0)
-    {
-        return 0;
-    }
-    std::cout<<n_num<<","<<d_N <<"	"<< d_V <<"	"<< d_A <<"	"<< d_M <<"	"<< d_Q <<"	"<< d_T<<std::endl;
-    return (d_N + d_V + d_A + d_M + d_Q + d_T)/n_num;
+    std::cout<<d_N <<"	"<< d_V <<"	"<< d_A <<"	"<< d_M <<"	"<< d_Q <<"	"<< d_T<<std::endl;
+    return (d_N*weight_n/weight_all + d_V*weight_v/weight_all + d_A*weight_a/weight_all + d_M*weight_m/weight_all + d_Q*weight_q/weight_all + d_T*weight_t/weight_all);
 }
 
 /**
@@ -99,79 +95,85 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
     std::vector<double> vec_maxsim;
     int len1=vec1.size();
     int len2=vec2.size();
-    if(len1==0 || len2 ==0)
+    if(len1!=0 && len2 !=0)
     {
-        return 0.0;
-    }
-    //计算由两个向量组成的矩阵中的相似度
-    double** matrix;
-    //矩阵初始化
-    matrix = new double*[len1];
-    for(int i=0; i<len1; i++)
-    {
-        matrix[i] = new double[len2];
-    }
-    //计算矩阵中的词语相似度
-    for(int i=0; i<len1; i++)
-    {
-        for(int j=0; j<len2; j++)
+        //计算由两个向量组成的矩阵中的相似度
+        double** matrix;
+        //矩阵初始化
+        matrix = new double*[len1];
+        for(int i=0; i<len1; i++)
         {
-            if(vec1[i] == vec2[j])
-            {
-                matrix[i][j] = 1;
-            }
-            else
-            {
-                std::vector<std::string> vec_concept1 = map_WordConceptsVector[vec1[i]];
-                if(len1==0)
-                {
-                    std::cout<<"word1 "<<vec1[i]<<" not in dict"<<std::endl;
-                    matrix[i][j] = 0;
-                }
-                else
-                {
-                    std::vector<std::string> vec_concept2 = map_WordConceptsVector[vec2[j]];
-                    if(len2==0)
-                    {
-                        std::cout<<"word2 "<<vec2[j]<<" not in dict"<<std::endl;
-                        matrix[i][j] = 0;
-                    }else
-                    {
-                        matrix[i][j] = WordSimilarity::CalcWordSimilarityByConcepts(vec_concept1,vec_concept2);
-                    }
-                }
-            }
+            matrix[i] = new double[len2];
         }
-    }
-    //查找矩阵中最大相似度最大的词语对，加入相似度向量中
-    int num = 0;
-    while(num<len1 && num <len2)
-    {
-        double max_sim = -1;
-        int m,n;
+        //计算矩阵中的词语相似度
         for(int i=0; i<len1; i++)
         {
             for(int j=0; j<len2; j++)
             {
-                if(matrix[i][j]>max_sim && matrix[i][j] >0)
+                if(vec1[i] == vec2[j])
                 {
-                    max_sim = matrix[i][j];
-                    m = i;
-                    n = j;
+                    matrix[i][j] = 1;
+                }
+                else
+                {
+                    std::vector<std::string> vec_concept1 = map_WordConceptsVector[vec1[i]];
+                    if(len1==0)
+                    {
+                        std::cout<<"word1 "<<vec1[i]<<" not in dict"<<std::endl;
+                        matrix[i][j] = 0;
+                    }
+                    else
+                    {
+                        std::vector<std::string> vec_concept2 = map_WordConceptsVector[vec2[j]];
+                        if(len2==0)
+                        {
+                            std::cout<<"word2 "<<vec2[j]<<" not in dict"<<std::endl;
+                            matrix[i][j] = 0;
+                        }
+                        else
+                        {
+                            matrix[i][j] = WordSimilarity::CalcWordSimilarityByConcepts(vec_concept1,vec_concept2);
+                        }
+                    }
                 }
             }
         }
-        //从向量中删除以计算的词语
-        for(int i=0; i<len1; i++) //列向置为-1
+        //查找矩阵中最大相似度最大的词语对，加入相似度向量中
+        int num = 0;
+        while(num<len1 && num <len2)
         {
-            matrix[i][n] = -1;
+            double max_sim = -1;
+            int m,n;
+            for(int i=0; i<len1; i++)
+            {
+                for(int j=0; j<len2; j++)
+                {
+                    if(matrix[i][j]>max_sim && matrix[i][j] >0)
+                    {
+                        max_sim = matrix[i][j];
+                        m = i;
+                        n = j;
+                    }
+                }
+            }
+            //从向量中删除以计算的词语
+            for(int i=0; i<len1; i++) //列向置为-1
+            {
+                matrix[i][n] = -1;
+            }
+            for(int i=0; i<len2; i++)
+            {
+                matrix[m][i] = -1;
+            }
+            vec_maxsim.push_back(max_sim);
+            num++;
         }
-        for(int i=0; i<len2; i++)
+        //释放matrix矩阵资源
+        for(int i=0; i<len1; i++)
         {
-            matrix[m][i] = -1;
+            delete[] matrix[i];
         }
-        vec_maxsim.push_back(max_sim);
-        num++;
+        delete[] matrix;
     }
     //对于剩下的词语，与空格计算相似度并加入到相似度向量中
     int n_rest = len1>len2?len1-len2:len2-len1;
@@ -192,12 +194,6 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
         sum+=*it;
         it++;
     }
-    //释放matrix矩阵资源
-    for(int i=0; i<len1; i++)
-    {
-        delete[] matrix[i];
-    }
-    delete[] matrix;
     return sum/vec_maxsim.size();
 }
 
@@ -217,38 +213,35 @@ void SentenceSimilarity::SplitSentenceToVectors(const std::string& str,std::vect
             continue;
         }
         //筛选词性名词(N)、动词(V)、形容词 (A)、数词(M)、量词(Q)和时间(T)
-        if(StringUtil::ConvertCharArraytoWString(str_HitsWord).length()>1)
+        char ch_pos = pVecResult[i].sPOS[0];
+        switch(ch_pos)
         {
-            char ch_pos = pVecResult[i].sPOS[0];
-            switch(ch_pos)
-            {
-            case 'n':
-                vec_Word.push_back(str_HitsWord);
-                vec_NWord.push_back(str_HitsWord);
-                break;
-            case 'v':
-                vec_Word.push_back(str_HitsWord);
-                vec_VWord.push_back(str_HitsWord);
-                break;
-            case 'a':
-                vec_Word.push_back(str_HitsWord);
-                vec_VWord.push_back(str_HitsWord);
-                break;
-            case 'm':
-                vec_Word.push_back(str_HitsWord);
-                vec_VWord.push_back(str_HitsWord);
-                break;
-            case 'q':
-                vec_Word.push_back(str_HitsWord);
-                vec_VWord.push_back(str_HitsWord);
-                break;
-            case 't':
-                vec_Word.push_back(str_HitsWord);
-                vec_VWord.push_back(str_HitsWord);
-                break;
-            default:
-                break;
-            }
+        case 'n':
+            vec_Word.push_back(str_HitsWord);
+            vec_NWord.push_back(str_HitsWord);
+            break;
+        case 'v':
+            vec_Word.push_back(str_HitsWord);
+            vec_VWord.push_back(str_HitsWord);
+            break;
+        case 'a':
+            vec_Word.push_back(str_HitsWord);
+            vec_AWord.push_back(str_HitsWord);
+            break;
+        case 'm':
+            vec_Word.push_back(str_HitsWord);
+            vec_MWord.push_back(str_HitsWord);
+            break;
+        case 'q':
+            vec_Word.push_back(str_HitsWord);
+            vec_QWord.push_back(str_HitsWord);
+            break;
+        case 't':
+            vec_Word.push_back(str_HitsWord);
+            vec_TWord.push_back(str_HitsWord);
+            break;
+        default:
+            break;
         }
     }
 }
