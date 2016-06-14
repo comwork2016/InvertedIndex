@@ -56,6 +56,7 @@
 		<Unit filename="include/service/SentenceSimilarity.h" />
 		<Unit filename="include/service/WordSimilarity.h" />
 		<Unit filename="include/util/HashUtil.h" />
+		<Unit filename="include/util/RangeUtil.h" />
 		<Unit filename="include/util/StringUtil.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/content/Document.cpp" />
@@ -69,6 +70,7 @@
 		<Unit filename="src/service/SentenceSimilarity.cpp" />
 		<Unit filename="src/service/WordSimilarity.cpp" />
 		<Unit filename="src/util/HashUtil.cpp" />
+		<Unit filename="src/util/RangeUtil.cpp" />
 		<Unit filename="src/util/StringUtil.cpp" />
 		<Extensions>
 			<code_completion />

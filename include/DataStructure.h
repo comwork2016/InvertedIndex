@@ -43,6 +43,8 @@ const static double weight_q=0.1;
 const static double weight_m=0.1;
 const static double weight_t=0.1;
 
+const static double SIMGATE=0.8;
+
 //定义结构体，文档某一段之间的内容
 struct TextRange
 {

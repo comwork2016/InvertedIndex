@@ -258,9 +258,12 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
                         Document* docDB = new Document(docID);
                         std::string str_Similar = docDB->GetstrContents().substr(begin,end-begin);
                         double d_sim = SentenceSimilarity::CalcSentenceSimilarity(str_Search,str_Similar);
-                        std::cout<<doc->GetDocID()<<"\t["<<sen.textRange.offset<<","<<sen.textRange.offset+sen.textRange.length<<"]"<<str_Search<<std::endl;
-                        std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<str_Similar<<std::endl;
-                        std::cout<<"similarity is "<<d_sim<<std::endl<<std::endl;
+                        if(d_sim > SIMGATE)
+                        {
+                            std::cout<<doc->GetDocID()<<"\t["<<sen.textRange.offset<<","<<sen.textRange.offset+sen.textRange.length<<"]"<<str_Search<<std::endl;
+                            std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<str_Similar<<std::endl;
+                            std::cout<<"similarity is "<<d_sim<<std::endl<<std::endl;
+                        }
                     }
                 }
             }

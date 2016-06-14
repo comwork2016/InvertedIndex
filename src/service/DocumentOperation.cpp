@@ -54,7 +54,7 @@ int DocumentOperation::AddDirectoryDocuments(const std::string& str_InputDir)
         vec_Documents.push_back(doc);
         num++;
         //一次
-        if(num%50==0)
+        if(num%1000==0)
         {
             num=0;
             //将文档集合添加到数据库中
@@ -65,7 +65,7 @@ int DocumentOperation::AddDirectoryDocuments(const std::string& str_InputDir)
                 delete vec_Documents[i];
             }
             vec_Documents.clear();
-            break;
+            //break;
         }
     }
     //将文档集合添加到数据库中
