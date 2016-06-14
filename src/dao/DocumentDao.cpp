@@ -181,70 +181,60 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
             Sentence sen = para.vec_Sentences[j];
             int n_SameWordGate = sen.vec_splitedHits.size() * 0.5;
             std::vector<std::map<DOC_ID,WordIndexRecord*> > vec_WordInvertedIndex;//所有词语的倒排索引列表
+            std::map<DOC_ID,std::map<int,Range> > map_DocWordNoPosition;//保存所有词语的位置信息。
             for(int k=0; k<sen.vec_splitedHits.size(); k++)
             {
                 std::string str_Word = sen.vec_splitedHits[k].word;
                 std::map<DOC_ID,WordIndexRecord*> map_WordDocIndexRecord = QueryIndexOfWord(str_Word);//单词索引的文档信息
+                //遍历索引信息，保存词语位置信息
+                for(std::map<DOC_ID,WordIndexRecord*>::iterator it = map_WordDocIndexRecord.begin(); it != map_WordDocIndexRecord.end(); it++)
+                {
+                    DOC_ID docID = it->first;
+                    WordIndexRecord* record = it->second;
+                    std::vector<WordPos> vec_WordPos = record->GetVecPos();
+                    //遍历每一个位置范围
+                    std::map<int,Range> map_NoPositionInDoc = map_DocWordNoPosition[docID];
+                    for(int m=0; m<vec_WordPos.size(); m++)
+                    {
+                        WordPos wordPos = vec_WordPos[m];
+                        Range posRange = {wordPos.wordPos,wordPos.wordPos+str_Word.length()};
+                        map_NoPositionInDoc[wordPos.NoInDoc] = posRange;
+                    }
+                    map_DocWordNoPosition[docID] = map_NoPositionInDoc;
+                }
                 vec_WordInvertedIndex.push_back(map_WordDocIndexRecord);
             }
             //合并倒排列表，取出出现次数大于阈值并且词语位置相邻的句子范围信息
             std::map<DOC_ID,std::vector<DOCRANGETIMES> > map_DocRangeVector;
             for(int k=0; k<vec_WordInvertedIndex.size(); k++)
             {
-                std::map<DOC_ID,WordIndexRecord*> map_WordDocIndexRecord = vec_WordInvertedIndex[i];
-                //便利每一个文档列表
+                std::map<DOC_ID,WordIndexRecord*> map_WordDocIndexRecord = vec_WordInvertedIndex[k];
+                //便利每一个文档索引列表
                 for(std::map<DOC_ID,WordIndexRecord*>::iterator it = map_WordDocIndexRecord.begin(); it != map_WordDocIndexRecord.end(); it++)
                 {
                     DOC_ID docID = it->first;
                     WordIndexRecord* record = it->second;
                     std::vector<WordPos> vec_WordPos = record->GetVecPos();
+                    //遍历每一个位置范围
                     for(int m=0; m<vec_WordPos.size(); m++)
                     {
                         WordPos wordPos = vec_WordPos[m];
+                        Range range = {wordPos.NoInDoc,wordPos.NoInDoc};
+                        DOCRANGETIMES docRangeTimes(range,1);
                         //对于每个单词的位置，查看是否能够与前面的文档范围合并，如果不能，则新建一个范围
                         //文档第一次出现
-                        if(map_DocRangeVector.find(docID) != map_DocRangeVector.end())
+                        if(map_DocRangeVector.find(docID) == map_DocRangeVector.end())
                         {
                             std::vector<DOCRANGETIMES> vec_DocRangeTimes;
-                            Range range = {wordPos.NoInDoc, wordPos.NoInDoc};
-                            DOCRANGETIMES docRangeTimes(range,1);
                             vec_DocRangeTimes.push_back(docRangeTimes);
                             map_DocRangeVector[docID] = vec_DocRangeTimes;
                         }
                         else
                         {
-                            std::vector<DOCRANGETIMES> vec_DocRangeTimes = map_DocRangeVector[docID];
-                            //遍历已保存的文档范围
-                            for(int n=0; n<vec_DocRangeTimes.size(); n++)
-                            {
-                                DOCRANGETIMES docRangeTimes = vec_DocRangeTimes[n];
-                                Range range = docRangeTimes.first;
-                                int time = docRangeTimes.second;
-                                //如果在文档范围内，改变文档的范围，并将出现次数+1
-                                if(wordPos.NoInDoc> range.begin - SIMILARRANGE && wordPos.NoInDoc <= range.end + SIMILARRANGE)
-                                {
-                                    if(wordPos.NoInDoc < range.begin)
-                                    {
-                                        range.begin = wordPos.NoInDoc;
-                                    }
-                                    else if(wordPos.NoInDoc > range.end)
-                                    {
-                                        range.end = wordPos.NoInDoc;
-                                    }
-                                    time++;
-                                    DOCRANGETIMES docRangeTimes(range,time);
-                                    vec_DocRangeTimes.erase(vec_DocRangeTimes.begin()+n);
-                                    vec_DocRangeTimes.insert(vec_DocRangeTimes.begin()+n,docRangeTimes);
-                                }
-                                else//范围位置偏差太大，则新建一个位置存放词语信息
-                                {
-                                    std::vector<DOCRANGETIMES> vec_DocRangeTimes;
-                                    Range range = {wordPos.NoInDoc, wordPos.NoInDoc};
-                                    DOCRANGETIMES docRangeTimes(range,1);
-                                    vec_DocRangeTimes.push_back(docRangeTimes);
-                                }
-                            }
+                            std::vector<DOCRANGETIMES> vec_DocRangeTimes = map_DocRangeVector[docID];//某个文档已保存的位置向量
+                            RangeUtil::MergeRangeToVector(vec_DocRangeTimes,docRangeTimes);
                             map_DocRangeVector[docID] = vec_DocRangeTimes;
+                            //std::cin.get();
                         }
                     }
                 }
@@ -254,13 +244,17 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
             {
                 DOC_ID docID = it->first;
                 std::vector<DOCRANGETIMES> vec_DocRangeTimes = it->second;
-                for(int m=0;m<vec_DocRangeTimes.size();m++)
+                for(int m=0; m<vec_DocRangeTimes.size(); m++)
                 {
                     DOCRANGETIMES docRangeTimes = vec_DocRangeTimes[m];
                     if(docRangeTimes.second > 0.5*sen.vec_splitedHits.size())
                     {
                         Range range = docRangeTimes.first;
+                        std::map<int,Range> map_NoPositionInDoc = map_DocWordNoPosition[docID];
+                        int begin = map_NoPositionInDoc[range.begin].begin;
+                        int end = map_NoPositionInDoc[range.end].end;
                         std::cout<<docID<<"\t["<<range.begin<<","<<range.end<<"]"<<std::endl;
+                        std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<std::endl;
                     }
                 }
             }

@@ -187,7 +187,7 @@ void Document::SplitTermAndCalcTF(Sentence& sen)
         }
         //筛选词性名词(N)、动词(V)、形容词 (A)、数词(M)、量词(Q)和时间(T)
         char ch_pos = pVecResult[i].sPOS[0];
-        if((ch_pos == 'n' || ch_pos == 'v' || ch_pos == 'n' || ch_pos == 'a' || ch_pos == 'm' || ch_pos == 'q' || ch_pos == 't') && StringUtil::ConvertCharArraytoWString(str_HitsWord).length()>1)
+        if(ch_pos == 'n' || ch_pos == 'v' || ch_pos == 'n' || ch_pos == 'a' || ch_pos == 'm' || ch_pos == 'q' || ch_pos == 't')
         {
             //SIMHASH_TYPE simhash = HashUtil::CalcStringHash(str_HitsWord);
             TextRange textRange =

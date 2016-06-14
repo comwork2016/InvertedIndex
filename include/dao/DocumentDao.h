@@ -6,6 +6,7 @@
 #include "../content/WordIndexRecord.h"
 
 #include "SentenceSimilarity.h"
+#include "RangeUtil.h"
 
 class DocumentDao
 {

@@ -25,7 +25,7 @@ void WordIndexRecord::Display()
     std::cout<<"{"<<this->m_DocID<<", "<<this->m_nTermFrequency<<", (";
     for(int i=0;i<this->m_vecPos.size();i++)
     {
-        std::cout<<this->m_vecPos[i].wordPos<<",";
+        std::cout<<this->m_vecPos[i].NoInDoc<<",";
     }
     std::cout<<")}";
 }
