@@ -83,7 +83,7 @@ double SentenceSimilarity::CalcSentenceSimilarity(const std::string str_Sen1,con
         d_T = CalcVectorSimilarity(vec_TWord1,vec_TWord2,map_WordConceptsVector);
         weight_all += weight_t;
     }
-    std::cout<<d_N <<"	"<< d_V <<"	"<< d_A <<"	"<< d_M <<"	"<< d_Q <<"	"<< d_T<<std::endl;
+    //std::cout<<d_N <<"	"<< d_V <<"	"<< d_A <<"	"<< d_M <<"	"<< d_Q <<"	"<< d_T<<std::endl;
     return (d_N*weight_n/weight_all + d_V*weight_v/weight_all + d_A*weight_a/weight_all + d_M*weight_m/weight_all + d_Q*weight_q/weight_all + d_T*weight_t/weight_all);
 }
 

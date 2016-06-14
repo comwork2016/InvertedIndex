@@ -179,7 +179,7 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
         for(int j=0; j<para.vec_Sentences.size(); j++)
         {
             Sentence sen = para.vec_Sentences[j];
-            int n_SameWordGate = sen.vec_splitedHits.size() * 0.5;
+            std::string str_Search = doc->GetstrContents().substr(sen.textRange.offset,sen.textRange.length);
             std::vector<std::map<DOC_ID,WordIndexRecord*> > vec_WordInvertedIndex;//所有词语的倒排索引列表
             std::map<DOC_ID,std::map<int,Range> > map_DocWordNoPosition;//保存所有词语的位置信息。
             for(int k=0; k<sen.vec_splitedHits.size(); k++)
@@ -253,8 +253,14 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
                         std::map<int,Range> map_NoPositionInDoc = map_DocWordNoPosition[docID];
                         int begin = map_NoPositionInDoc[range.begin].begin;
                         int end = map_NoPositionInDoc[range.end].end;
-                        std::cout<<docID<<"\t["<<range.begin<<","<<range.end<<"]"<<std::endl;
-                        std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<std::endl;
+                        //std::cout<<docID<<"\t["<<range.begin<<","<<range.end<<"]"<<std::endl;
+                        //std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<std::endl;
+                        Document* docDB = new Document(docID);
+                        std::string str_Similar = docDB->GetstrContents().substr(begin,end-begin);
+                        double d_sim = SentenceSimilarity::CalcSentenceSimilarity(str_Search,str_Similar);
+                        std::cout<<doc->GetDocID()<<"\t["<<sen.textRange.offset<<","<<sen.textRange.offset+sen.textRange.length<<"]"<<str_Search<<std::endl;
+                        std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<str_Similar<<std::endl;
+                        std::cout<<"similarity is "<<d_sim<<std::endl<<std::endl;
                     }
                 }
             }
