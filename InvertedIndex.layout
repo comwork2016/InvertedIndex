@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include/content/Sememe.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/dao/GlossaryDao.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="408" topLine="0" />
+			<Cursor1 position="3801" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/util/StringUtil.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/content/Document.cpp" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3048" topLine="105" />
-		</Cursor>
-	</File>
-	<File name="include/content/WordIndex.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="883" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="include/dao/GlossaryDao.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="615" topLine="5" />
+			<Cursor1 position="890" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/service/DocumentOperation.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -26,59 +16,9 @@
 			<Cursor1 position="349" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/service/SentenceSimilarity.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/util/RangeUtil.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="191" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/util/RangeUtil.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="87" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/dao/DocumentDao.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="208" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/corpus/ReadCorpus.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1738" topLine="17" />
-		</Cursor>
-	</File>
-	<File name="include/util/HashUtil.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="188" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/content/Document.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2172" topLine="45" />
-		</Cursor>
-	</File>
-	<File name="src/dao/GlossaryDao.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3801" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/DataStructure.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="202" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/content/WordIndex.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1216" topLine="16" />
-		</Cursor>
-	</File>
-	<File name="src/util/HashUtil.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1359" topLine="49" />
-		</Cursor>
-	</File>
-	<File name="include/service/WordSimilarity.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="163" topLine="6" />
+			<Cursor1 position="2030" topLine="42" />
 		</Cursor>
 	</File>
 	<File name="include/corpus/ReadCorpus.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -86,9 +26,29 @@
 			<Cursor1 position="321" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="src/dao/DocumentDao.cpp" open="1" top="1" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/service/WordSimilarity.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="13000" topLine="237" />
+			<Cursor1 position="163" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="include/dao/DocumentDao.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="208" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/util/RangeUtil.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="87" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/content/WordIndex.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="883" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="src/dao/DocumentDao.cpp" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13648" topLine="22" />
 		</Cursor>
 	</File>
 	<File name="src/service/WordSimilarity.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -96,14 +56,9 @@
 			<Cursor1 position="6279" topLine="183" />
 		</Cursor>
 	</File>
-	<File name="src/content/Document.cpp" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="include/DataStructure.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5598" topLine="180" />
-		</Cursor>
-	</File>
-	<File name="src/content/WordIndexRecord.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="679" topLine="7" />
+			<Cursor1 position="1377" topLine="24" />
 		</Cursor>
 	</File>
 	<File name="src/content/Sememe.cpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -111,9 +66,39 @@
 			<Cursor1 position="0" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="src/service/SentenceSimilarity.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/service/DocumentOperation.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3136" topLine="68" />
+			<Cursor1 position="1382" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="include/service/SentenceSimilarity.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="191" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/dao/GlossaryDao.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="615" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="include/content/Sememe.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="408" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/content/WordIndex.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1216" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="src/util/StringUtil.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3048" topLine="105" />
+		</Cursor>
+	</File>
+	<File name="include/util/StringUtil.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="709" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/content/WordIndexRecord.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -121,24 +106,39 @@
 			<Cursor1 position="409" topLine="6" />
 		</Cursor>
 	</File>
-	<File name="src/service/DocumentOperation.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/service/SentenceSimilarity.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2969" topLine="97" />
+			<Cursor1 position="3136" topLine="68" />
 		</Cursor>
 	</File>
-	<File name="src/util/RangeUtil.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/corpus/ReadCorpus.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2030" topLine="42" />
+			<Cursor1 position="1738" topLine="17" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/content/WordIndexRecord.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1019" topLine="28" />
+			<Cursor1 position="679" topLine="7" />
 		</Cursor>
 	</File>
-	<File name="include/util/StringUtil.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/util/HashUtil.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="709" topLine="0" />
+			<Cursor1 position="1359" topLine="49" />
+		</Cursor>
+	</File>
+	<File name="include/util/HashUtil.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="188" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="502" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="include/content/Document.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2172" topLine="45" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

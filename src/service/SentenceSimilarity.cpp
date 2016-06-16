@@ -95,88 +95,89 @@ double SentenceSimilarity::CalcVectorSimilarity(std::vector<std::string>& vec1,s
     std::vector<double> vec_maxsim;
     int len1=vec1.size();
     int len2=vec2.size();
-    if(len1!=0 && len2 !=0)
+    //计算由两个向量组成的矩阵中的相似度
+    double** matrix;
+    //矩阵初始化
+    matrix = new double*[len1];
+    for(int i=0; i<len1; i++)
     {
-        //计算由两个向量组成的矩阵中的相似度
-        double** matrix;
-        //矩阵初始化
-        matrix = new double*[len1];
-        for(int i=0; i<len1; i++)
+        matrix[i] = new double[len2];
+    }
+    //计算矩阵中的词语相似度
+    for(int i=0; i<len1; i++)
+    {
+        for(int j=0; j<len2; j++)
         {
-            matrix[i] = new double[len2];
-        }
-        //计算矩阵中的词语相似度
-        for(int i=0; i<len1; i++)
-        {
-            for(int j=0; j<len2; j++)
+            if(vec1[i] == vec2[j])
             {
-                if(vec1[i] == vec2[j])
+                matrix[i][j] = 1;
+            }
+            else
+            {
+                std::vector<std::string> vec_concept1 = map_WordConceptsVector[vec1[i]];
+                if(len1==0)
                 {
-                    matrix[i][j] = 1;
+                    std::cout<<"word1 "<<vec1[i]<<" not in dict"<<std::endl;
+                    matrix[i][j] = 0;
                 }
                 else
                 {
-                    std::vector<std::string> vec_concept1 = map_WordConceptsVector[vec1[i]];
-                    if(len1==0)
+                    std::vector<std::string> vec_concept2 = map_WordConceptsVector[vec2[j]];
+                    if(len2==0)
                     {
-                        std::cout<<"word1 "<<vec1[i]<<" not in dict"<<std::endl;
+                        std::cout<<"word2 "<<vec2[j]<<" not in dict"<<std::endl;
                         matrix[i][j] = 0;
                     }
                     else
                     {
-                        std::vector<std::string> vec_concept2 = map_WordConceptsVector[vec2[j]];
-                        if(len2==0)
-                        {
-                            std::cout<<"word2 "<<vec2[j]<<" not in dict"<<std::endl;
-                            matrix[i][j] = 0;
-                        }
-                        else
-                        {
-                            matrix[i][j] = WordSimilarity::CalcWordSimilarityByConcepts(vec_concept1,vec_concept2);
-                        }
+                        matrix[i][j] = WordSimilarity::CalcWordSimilarityByConcepts(vec_concept1,vec_concept2);
                     }
                 }
             }
         }
-        //查找矩阵中最大相似度最大的词语对，加入相似度向量中
-        int num = 0;
-        while(num<len1 && num <len2)
-        {
-            double max_sim = -1;
-            int m,n;
-            for(int i=0; i<len1; i++)
-            {
-                for(int j=0; j<len2; j++)
-                {
-                    if(matrix[i][j]>max_sim && matrix[i][j] >0)
-                    {
-                        max_sim = matrix[i][j];
-                        m = i;
-                        n = j;
-                    }
-                }
-            }
-            //从向量中删除以计算的词语
-            for(int i=0; i<len1; i++) //列向置为-1
-            {
-                matrix[i][n] = -1;
-            }
-            for(int i=0; i<len2; i++)
-            {
-                matrix[m][i] = -1;
-            }
-            vec_maxsim.push_back(max_sim);
-            num++;
-        }
-        //释放matrix矩阵资源
+    }
+    //查找矩阵中最大相似度最大的词语对，加入相似度向量中
+    int num = 0;
+    while(num<len1 && num <len2)
+    {
+        double max_sim = -1;
+        int m,n;
         for(int i=0; i<len1; i++)
         {
-            delete[] matrix[i];
+            for(int j=0; j<len2; j++)
+            {
+                if(matrix[i][j]>max_sim && matrix[i][j] >0)
+                {
+                    max_sim = matrix[i][j];
+                    m = i;
+                    n = j;
+                }
+            }
         }
-        delete[] matrix;
+        if(max_sim == -1)//没有词语相似了
+        {
+            break;
+        }
+        //从向量中删除以计算的词语
+        for(int i=0; i<len1; i++) //列向置为-1
+        {
+            matrix[i][n] = -1;
+        }
+        for(int i=0; i<len2; i++)
+        {
+            matrix[m][i] = -1;
+        }
+        vec_maxsim.push_back(max_sim);
+        num++;
     }
+    //释放matrix矩阵资源
+    for(int i=0; i<len1; i++)
+    {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
     //对于剩下的词语，与空格计算相似度并加入到相似度向量中
-    int n_rest = len1>len2?len1-len2:len2-len1;
+    int n_rest = len1>len2?len1-num:len2-num;
     for(int i=0; i<n_rest; i++)
     {
         double d_NullSim = delta;

@@ -256,7 +256,14 @@ void DocumentDao::GetSentenceSimilarDocument(const Document* doc)
                         //std::cout<<docID<<"\t["<<range.begin<<","<<range.end<<"]"<<std::endl;
                         //std::cout<<docID<<"\t["<<begin<<","<<end<<"]"<<std::endl;
                         Document* docDB = new Document(docID);
+                        /*if(docID=="./in/utf_1553.txt")
+                        {
+                            delete docDB;
+                            docDB = new Document(docID,true);
+                            docDB->Display();
+                        }*/
                         std::string str_Similar = docDB->GetstrContents().substr(begin,end-begin);
+                        //std::cout<<str_Similar<<std::endl;
                         double d_sim = SentenceSimilarity::CalcSentenceSimilarity(str_Search,str_Similar);
                         if(d_sim > SIMGATE)
                         {

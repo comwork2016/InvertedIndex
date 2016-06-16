@@ -45,8 +45,8 @@ int main()
     /*std::string str1 = "“龙眼”无人机是由美国海军陆战队士兵在阿富汗地区发射";
     std::string str2 = "海军陆战队战士在阿富汗山区发射“龙眼”无人机";
     //相似度为0.48
-    std::string str1 = "这颗树有3米高";
-    std::string str2 = "那个石头有2千克重";
+    std::string str1 = "他们结合海军某快反支队海上训练的保障任务";
+    std::string str2 = "训练由静态训练向动态训练转变，由室内训练向室外训练";
     std::cout<<SentenceSimilarity::CalcSentenceSimilarity(str1,str2)<<std::endl;*/
 
     gettimeofday(&finish,NULL);
